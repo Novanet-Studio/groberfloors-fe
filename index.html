@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grober Floors | Site underconstruction</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      background: black;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+    }
+
+    .header__logo {
+      margin: 4em 0 3em 0;
+    }
+
+    .title {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      background-color: #e31738;
+      padding: 0.7em 0 0.7em 0;
+    }
+
+    .image {
+      width: 100%;
+    }
+
+    .image__file {
+      max-width: 100%;
+    }
+
+    .contact {
+      width: 50em;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+    .contact__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: White;
+      text-align: center;
+    }
+
+    .contact__icon-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact__icon {
+      display: flex;
+      justify-content: center;
+      border-radius: 100%;
+      border: 3px solid #e31738;
+      background: white;
+    }
+
+    .contact__text {
+      margin-top: 0.5em;
+    }
+
+    @media all and (max-device-width: 25.875em) and (-webkit-min-device-pixel-ratio: 1) {
+      .container {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .header__logo {
+        width: 60%;
+      }
+
+      .title {
+        font-size: 1.2rem;
+      }
+
+      .contact {
+        width: 100%;
+        margin-top: 1em;
+      }
+
+      .contact__item {
+        width: 100%;
+      }
+
+      .contact__icon {
+        width: 1.7em;
+        height: 1.7em;
+        padding: 0.4rem;
+      }
+
+      .contact__text {
+        font-size: 0.75rem;
+        margin-bottom: 1.25em;
+      }
+    }
+
+    @media all and (min-device-width: 80em) and (-webkit-min-device-pixel-ratio: 1) {
+      .container {
+        max-width: 80em;
+        min-height: 93vh;
+      }
+
+      .header__logo {
+        width: 70%;
+        margin: 4em 0 3em 0;
+      }
+
+      .title {
+        font-size: 1.6rem;
+      }
+
+      .contact {
+        margin-top: -2em;
+      }
+
+      .contact__item {
+        width: 33.3333333%;
+        font-size: 0.8rem;
+      }
+
+      .contact__icon {
+        padding: 0.75rem;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="/img/groberfloors-logo.svg"
+          alt="Grober Floors logo"
+          class="header__logo"
+        />
+      </div>
+      <div class="title">our website is underconstruction</div>
+      <div class="image">
+        <img
+          src="/img/groberfloors-floor-type.webp"
+          alt="Showcase of a floor type"
+          class="image__file"
+        />
+        <div class="contact">
+          <div class="contact__item">
+            <div class="contact__icon-wrapper">
+              <div class="contact__icon">
+                <img src="/img/groberfloors-pin-icon.svg" alt="Pin icon" />
+              </div>
+            </div>
+
+            <div class="contact__text">
+              Eurogrober Miami 8900 NW 35th lane suite 140 Doral Fl 33172
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon-wrapper">
+              <div class="contact__icon">
+                <img src="/img/groberfloors-phone-icon.svg" alt="Phone icon" />
+              </div>
+            </div>
+
+            <div class="contact__text">
+              +1 786 620 1586 (English) <br />+1 786 307 1513 (Spanish)
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon-wrapper">
+              <div class="contact__icon">
+                <img src="/img/groberfloors-mail-icon.svg" alt="Mail icon" />
+              </div>
+            </div>
+
+            <div class="contact__text">groberfoor@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
