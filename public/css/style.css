@@ -155,7 +155,7 @@ h6 {
 
 h1, h2, h3, h4 {
   margin: 0;
-  line-height: 1.6;
+  line-height: 1;
   font-weight: 700;
 }
 
@@ -2338,6 +2338,10 @@ img.left {
   background-color: #ffdbdb !important;
 }
 
+.blue-novanet-color {
+  color: #099BC3;
+}
+
 .dark-blue-bg {
   background: #233d62;
 }
@@ -2368,6 +2372,15 @@ img.left {
 
 .yellow-green-bg {
   background-color: #b1d14e !important;
+}
+
+.red-grober-color {
+  color: #e31738 !important;
+}
+
+
+.red-grober-bg {
+  background-color: #e31738 !important;
 }
 
 .green-light-color {
@@ -3648,6 +3661,7 @@ img.left {
 
 .navbar .container {
   position: relative;
+  padding-top: 1em;
 }
 
 .navbar .icon-bar {
@@ -3834,7 +3848,7 @@ img.left {
 }
 
 .navbar .logo {
-  width: 70px;
+  width: 120px;
 }
 
 .navbar .search-area {
@@ -9855,7 +9869,7 @@ footer .sub-f {
 }
 
 footer .sub-f .logo {
-  width: 60px;
+  width: 80px;
 }
 
 footer .logo {

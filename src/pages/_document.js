@@ -22,11 +22,16 @@ class MyDocument extends Document {
             content="Ravo - Multi-Purpose React.js Next.js Template"
           />
           <meta name="author" content="" />
-          <link rel="shortcut icon" href="/img/favicon.ico" />
+          <link rel="shortcut icon" href="/img/favicon.png" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
           />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/plugins/fontawesome-all.min.css"
+          ></link>
         </Head>
 
         <body>

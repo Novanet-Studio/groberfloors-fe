@@ -29,9 +29,9 @@ const Navbar = ({ navbarRef, theme, logoTheme }) => {
       <div className="container">
         <Link className="navbar-brand" href="/">
           <div className="logo">
-            { logoTheme === 'dark' && <img src="img/logo-dark.png" alt="" /> }
-            { logoTheme === 'light' && <img src="img/logo-light.png" alt="" /> }
-            { !logoTheme && <img src="img/logo-dark.png" alt="" /> }
+            { logoTheme === 'dark' && <img src="img/groberfloor-logo-dark.svg" alt="" /> }
+            { logoTheme === 'light' && <img src="img/groberfloor-logo-light.svg" alt="" /> }
+            { !logoTheme && <img src="img/groberfloor-logo-dark.svg" alt="" /> }
           </div>
         </Link>
 

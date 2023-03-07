@@ -15,26 +15,23 @@ const Hero = () => {
                   <circle cx="150" cy="100" r="75" fill="none" />
                   <g>
                     <use xlinkHref="#circlePath" fill="none" />
-                    <text fill="#fff"><textPath xlinkHref="#circlePath">luxury architecture . luxury architecture</textPath></text>
+                    <text fill="#fff"><textPath xlinkHref="#circlePath">Our flooring is entirely Waterproof</textPath></text>
                   </g>
                 </svg>
               </div>
               <div className="rotate-exp">
-                <h2 className="yellow-green-color">{ heroData.years }</h2>
+                <h2 className="red-grober-color">{ heroData.years }</h2>
                 <h6>Years <br /> Of Experience</h6>
               </div>
             </div>
           </div>
           <div className="col-lg-6 valign">
             <div className="content">
-              <h6 className="fz-12 text-u ls4 yellow-green-color mb-10">About Us</h6>
+              <h6 className="fz-12 text-u ls4 red-grober-color mb-10">About Us</h6>
               <h3 className="mb-30">{ heroData.text }</h3>
               <p className="mb-10">{ heroData.text2 }</p>
-              <p>{ heroData.text3 }</p>
-              <a href="#0" data-scroll-nav="2" className="butn-dots mt-40">
-                <span>About Company</span>
-                <span className="bord-round"></span>
-              </a>
+              <p className="mb-10">{ heroData.text3 }</p>
+              <p>{ heroData.text4 }</p>              
             </div>
           </div>
         </div>
