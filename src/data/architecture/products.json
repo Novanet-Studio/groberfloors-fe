@@ -1,0 +1,104 @@
+{
+   "spc": {
+      "name": "SPC (Waterproof)",
+      "image": "",
+      "description": [
+         "Spc floors",
+         "Thickness 5.5mm",
+         "20mils wear layer",
+         "ixpe 1mm (pad)",
+         "12pcs per box",
+         "28.84 sqf per box",
+         "100% Waterproof",
+         "Unilin click"
+      ],
+      "benefits": [
+         "100% Waterproof",
+         "Highly durable",
+         "Eco-friendly",
+         "Easy to maintain",
+         "Easy to install"
+      ],
+      "installation": "The installation of Uniclic is fast and simple. The Uniclic profile can be classified as an angle or basic locking profile, which means it has to be installed by an angular rotation movement. Besides this angular installation method, Uniclic can also be installed in a horizontal way by snapping the planks into each other."
+   },
+   "accessories": [
+      {
+         "name": "Round",
+         "image": ""
+      },
+      {
+         "name": "Double round",
+         "image": ""
+      },
+      {
+         "name": "Molding L square",
+         "image": ""
+      },
+      {
+         "name": "L round",
+         "image": ""
+      },
+      {
+         "name": "Step square",
+         "image": ""
+      },
+      {
+         "name": "T-Molding",
+         "image": ""
+      },
+      {
+         "name": "Reducer",
+         "image": ""
+      },
+      {
+         "name": "Baseboards (no colors)",
+         "image": ""
+      }
+   ],
+   "colors": [
+      {
+         "name": "Alaskan Oak",
+         "image": ""
+      },
+      {
+         "name": "Artic White",
+         "image": ""
+      },
+      {
+         "name": "Barley Oak",
+         "image": ""
+      },
+      {
+         "name": "Bone White",
+         "image": ""
+      },
+      {
+         "name": "Cappuccino",
+         "image": ""
+      },
+      {
+         "name": "Keystone White",
+         "image": ""
+      },
+      {
+         "name": "Late Oak",
+         "image": ""
+      },
+      {
+         "name": "Light Brown",
+         "image": ""
+      },
+      {
+         "name": "Light Grey",
+         "image": ""
+      },
+      {
+         "name": "Urban Grey",
+         "image": ""
+      },
+      {
+         "name": "Water Oak",
+         "image": ""
+      }
+   ]
+}

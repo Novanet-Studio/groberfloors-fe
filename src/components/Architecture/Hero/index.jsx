@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="img-exp">
-              <div className="img bg-img" style={{ backgroundImage: "url('arch/img/h1.jpg')" }}></div>
+              <div className="img bg-img" style={{ backgroundImage: "url('arch/img/grobefloors-spc-floor-installation.webp')", backgroundPosition: "center" }}></div>
               <div id="circle">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px"
                   height="300px" viewBox="0 0 300 300" enableBackground="new 0 0 300 300" xmlSpace="preserve">
@@ -20,7 +20,7 @@ const Hero = () => {
                 </svg>
               </div>
               <div className="rotate-exp">
-                <h2 className="red-grober-color">{ heroData.years }</h2>
+                <h2 className="red-grober-color">{heroData.years}</h2>
                 <h6>Years <br /> Of Experience</h6>
               </div>
             </div>
@@ -28,10 +28,10 @@ const Hero = () => {
           <div className="col-lg-6 valign">
             <div className="content">
               <h6 className="fz-12 text-u ls4 red-grober-color mb-10">About Us</h6>
-              <h3 className="mb-30">{ heroData.text }</h3>
-              <p className="mb-10">{ heroData.text2 }</p>
-              <p className="mb-10">{ heroData.text3 }</p>
-              <p>{ heroData.text4 }</p>              
+              <h3 className="mb-30">{heroData.text}</h3>
+              <p className="mb-10">{heroData.text2}</p>
+              <p className="mb-10">{heroData.text3}</p>
+              <p>{heroData.text4}</p>
             </div>
           </div>
         </div>

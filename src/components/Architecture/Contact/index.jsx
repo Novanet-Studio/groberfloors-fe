@@ -77,24 +77,24 @@ const Contact = () => {
               <h6 className="mb-30 fw-700">{contact.title}</h6>
               <ul className="rest">
                 <li className="mb-10">
-                  <i class="fas fa-map red-grober-color"></i>
+                  <i className="fas fa-map red-grober-color"></i>
                   <a href="#0"> &nbsp; {contact.address}</a>
                 </li>
                 <li className="mb-10">
-                  <i class="fas fa-mobile red-grober-color"></i>
+                  <i className="fas fa-mobile red-grober-color"></i>
                   <a href="#0"> &nbsp; {contact.mobile}</a>
                 </li>
                 <li className="mb-10">
-                  <i class="fas fa-phone red-grober-color"></i>
+                  <i className="fas fa-phone red-grober-color"></i>
                   <a href="#0"> &nbsp; {contact.office}</a>
                 </li>
                 <li className="mb-10">
-                <i class="fas fa-envelope red-grober-color"></i>
+                <i className="fas fa-envelope red-grober-color"></i>
                   <a href="#0"> &nbsp; {contact.email}</a>
                 </li>
                 <li>
                   <a href={contact.instagram} target="_blank">
-                    <i class="fab fa-instagram red-grober-color"></i>
+                    <i className="fab fa-instagram red-grober-color"></i>
                     &nbsp; Groberfloors
                   </a>
                 </li>
