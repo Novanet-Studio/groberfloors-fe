@@ -16,7 +16,7 @@ const Highlight = () => {
           </div>
           <div className="col-lg-3 valign">
             <div className="d-flex justify-content-end full-width">
-              <a href="https://eurogrober.com/" target="_blank" className="butn-dots mt-40">
+              <a href="https://eurogrober.com/" target="_blank" rel="noreferrer" className="butn-dots mt-40">
                 <span>Go to Eurogrober site</span>
                 <span className="bord-round"></span>
               </a>

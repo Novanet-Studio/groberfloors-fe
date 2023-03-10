@@ -93,7 +93,7 @@ const Contact = () => {
                   &nbsp; {contact.email}
                 </li>
                 <li>
-                  <a href={contact.instagram} target="_blank">
+                  <a href={contact.instagram} target="_blank" rel="noreferrer">
                     <i className="fab fa-instagram red-grober-color"></i>
                     &nbsp; Groberfloors
                   </a>
