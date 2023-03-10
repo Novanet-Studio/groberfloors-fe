@@ -6,7 +6,9 @@ import AppLayout from "../layouts/app-layout";
 //= Components
 import Header from "../components/Architecture/Header";
 import Hero from "../components/Architecture/Hero";
-import Portfolio from "../components/Architecture/Portfolio";
+import Products from "../components/Architecture/Products";
+import Colors from "../components/Architecture/Colors";
+import Accesories from "../components/Architecture/Accesories";
 import Highlight from "../components/Architecture/Highlight";
 import Contact from "../components/Architecture/Contact";
 import Footer from "../components/Footers/ArchitectureFooter";
@@ -31,7 +33,7 @@ const HomeArchitecture = () => {
     },
     {
       name: "Contact",
-      href: "/contact-arch",
+      href: "#0",
     },
   ];
 
@@ -49,7 +51,9 @@ const HomeArchitecture = () => {
             style={{ backgroundImage: "url('arch/img/pattern-bg.svg')" }}
           ></div>
           <Hero />
-          <Portfolio />
+          <Products />
+          <Colors />
+          <Accesories />
           <Highlight />
           <Contact />
           <Footer />

@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact sub-bg section-padding mt-80">
+    <section className="contact sub-bg section-padding mt-80" data-scroll-index="3">
       <div className="container">
         <div className="row">
           <div className="col-lg-9">
@@ -78,19 +78,19 @@ const Contact = () => {
               <ul className="rest">
                 <li className="mb-10">
                   <i className="fas fa-map red-grober-color"></i>
-                  <a href="#0"> &nbsp; {contact.address}</a>
+                  &nbsp; {contact.address}
                 </li>
                 <li className="mb-10">
                   <i className="fas fa-mobile red-grober-color"></i>
-                  <a href="#0"> &nbsp; {contact.mobile}</a>
+                  &nbsp; {contact.mobile}
                 </li>
                 <li className="mb-10">
                   <i className="fas fa-phone red-grober-color"></i>
-                  <a href="#0"> &nbsp; {contact.office}</a>
+                  &nbsp; {contact.office}
                 </li>
                 <li className="mb-10">
-                <i className="fas fa-envelope red-grober-color"></i>
-                  <a href="#0"> &nbsp; {contact.email}</a>
+                  <i className="fas fa-envelope red-grober-color"></i>
+                  &nbsp; {contact.email}
                 </li>
                 <li>
                   <a href={contact.instagram} target="_blank">
