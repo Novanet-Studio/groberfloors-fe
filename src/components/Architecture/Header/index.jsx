@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header
-      className="slider arch-slider slider-prlx mt-60"
+      className="slider arch-slider slider-prlx mt-70"
       data-scroll-index="0"
     >
       {!load ? (
@@ -81,13 +81,6 @@ const Header = () => {
                         <p>{slide.desc}</p>
                       </div>
                     </div>
-                    {/* <div className="col-lg-3 offset-lg-1 valign">
-                            <div className="explore">
-                              <Link href="/project-details">
-                                <a>Explore</a>
-                              </Link>
-                            </div>
-                          </div> */}
                   </div>
                 </div>
               </div>
