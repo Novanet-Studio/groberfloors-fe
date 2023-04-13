@@ -1,27 +1,59 @@
 {
-   "spc": {
-      "name": "SPC (Waterproof)",
-      "image": "arch/img/products/groberfloors-product-spc-floor.svg",
-      "description": [
-         "Thickness 5.5mm",
-         "20mils wear layer",
-         "ixpe 1mm (pad)",
-         "12pcs per box",
-         "28.84 sqf per box",
-         "100% Waterproof",
-         "Unilin click"
+  "spc": {
+    "name": "SPC (Waterproof)",
+    "image": "arch/img/products/groberfloors-product-spc-floor.svg",
+    "description": [
+      "Thickness 5.5mm",
+      "20mils wear layer",
+      "ixpe 1mm (pad)",
+      "12pcs per box",
+      "28.84 sqf per box",
+      "100% Waterproof",
+      "Unilin click"
+    ],
+    "benefits": [
+      "100% Waterproof",
+      "Highly durable",
+      "Eco-friendly",
+      "Easy to maintain",
+      "Easy to install"
+    ],
+    "installation": {
+      "text": "The installation of Uniclic is fast and simple. The Uniclic profile can be classified as an angle or basic locking profile, which means it has to be installed by an angular rotation movement. Besides this angular installation method, Uniclic can also be installed in a horizontal way by snapping the planks into each other.",
+      "imageA": "arch/img/products/groberfloors-uniclic-system.svg",
+      "imageB": "arch/img/products/groberfloors-uniclic-system-2.webp"
+    }
+  },
+
+  "baseboards": [
+    {
+      "name": "Baseboard 5163 primed",
+      "sizes": ["9/16”x 5 1/4” x 16” LF"],
+      "image": "arch/img/products/baseboards/groberfloors-baseboard-5163-primed.webp"
+    },
+    {
+      "name": "Baseboard 5180 primed",
+      "sizes": ["9/16”x 5 1/4” x 16” LF"],
+      "image": "arch/img/products/baseboards/groberfloors-baseboard-5180-primed.webp"
+    },
+    {
+      "name": "Primed boards",
+      "sizes": [
+        "BB1x4 9/16” x 3 1/2” x 17 LF",
+        "BB1x6 9/16”x 5 1/2”x 16” LF",
+        "BB1x8 9/16”x 7 1/4”x 16” LF"
       ],
-      "benefits": [
-         "100% Waterproof",
-         "Highly durable",
-         "Eco-friendly",
-         "Easy to maintain",
-         "Easy to install"
-      ],
-      "installation": {
-         "text": "The installation of Uniclic is fast and simple. The Uniclic profile can be classified as an angle or basic locking profile, which means it has to be installed by an angular rotation movement. Besides this angular installation method, Uniclic can also be installed in a horizontal way by snapping the planks into each other.",
-         "imageA":"arch/img/products/groberfloors-uniclic-system.svg",
-         "imageB":"arch/img/products/groberfloors-uniclic-system-2.webp"
-      }
-   }   
+      "image": "arch/img/products/baseboards/groberfloors-baseboard-primed-boards.webp"
+    },
+    {
+      "name": "Crowns",
+      "sizes": ["CR45 9/16”x 5 1/4” x 16” LF"],
+      "image": "arch/img/products/baseboards/groberfloors-baseboard-crowns.webp"
+    },
+    {
+      "name": "Quarter round",
+      "sizes": ["QR8 11/16”x11/16”x16” LF"],
+      "image": "arch/img/products/baseboards/groberfloors-baseboard-quarter-round.webp"
+    }
+  ]
 }
