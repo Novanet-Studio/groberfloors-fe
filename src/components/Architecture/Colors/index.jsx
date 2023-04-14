@@ -16,7 +16,7 @@ const Portfolio = () => {
         <div className="sec-head mb-50">
           <div className="flex">
             <div className="m-title valign">
-              <h3>Colors</h3>
+              <h3>SPC Floors Colors</h3>
             </div>
           </div>
         </div>
