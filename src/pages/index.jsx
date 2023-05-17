@@ -25,7 +25,7 @@ const HomeArchitecture = () => {
       href: "#0",
     },
     {
-      name: "About us",
+      name: "About our product",
       href: "#0",
     },
     {

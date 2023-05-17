@@ -56,7 +56,7 @@ const Hero = () => {
           <div className="col-lg-6 valign">
             <div className="content">
               <h6 className="fz-12 text-u ls4 red-grober-color mb-10">
-                About Us
+                About our product
               </h6>
               <h3 className="mb-30">{heroData.text}</h3>
               <p className="mb-10">{heroData.text2}</p>
