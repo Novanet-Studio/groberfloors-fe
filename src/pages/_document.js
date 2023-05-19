@@ -15,13 +15,13 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="keywords"
-            content="React Nextjs Template Ravo Multi-Purpose themeforest"
+            content="SPC flooring, rigid vinyl flooring"
           />
           <meta
             name="description"
-            content="Ravo - Multi-Purpose React.js Next.js Template"
+            content="SPC flooring is a type of rigid vinyl flooring that is designed to mimic the look and feel of natural materials like wood or stone. It is a popular choice for residential and commercial spaces due to its durability, water resistance, and ease of maintenance"
           />
-          <meta name="author" content="" />
+          <meta name="author" content="@groberfloors" />
           <link rel="shortcut icon" href="/img/favicon.png" />
           <link
             rel="stylesheet"
