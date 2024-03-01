@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps }) {
         strategy="beforeInteractive"
         src="/landing-preview/js/parallax.min.js"
       ></Script>
+      <Script strategy="afterInteractive" src="/js/metrics.js"></Script>
       <Script strategy="lazyOnload" src="/js/main.js"></Script>
     </>
   );
