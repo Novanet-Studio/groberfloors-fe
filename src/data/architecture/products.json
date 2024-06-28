@@ -1,7 +1,7 @@
 {
-  "spc": {
-    "name": "SPC (Waterproof)",
-    "image": "arch/img/products/groberfloors-product-spc-floor.svg",
+  "lvf": {
+    "name": "Luxury Vinyl (Waterproof)",
+    "image": "arch/img/products/groberfloors-product-lvf-floor.svg",
     "description": [
       "Thickness 5.5mm",
       "20mils wear layer",

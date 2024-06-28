@@ -11,7 +11,7 @@ const Hero = () => {
                 className="img bg-img"
                 style={{
                   backgroundImage:
-                    "url('arch/img/grobefloors-spc-floor-installation.webp')",
+                    "url('arch/img/grobefloors-lvf-floor-installation.webp')",
                   backgroundPosition: "center",
                 }}
               ></div>

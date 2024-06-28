@@ -12,11 +12,11 @@ const Products = () => {
         <div className="row">
           <div className="flex">
             <div className="m-title valign">
-              <h3>SPC Floor (Waterproof)</h3>
+              <h3>Luxury Vinyl Floor (Waterproof)</h3>
             </div>
           </div>
           <div className='products main-image image-wrapper'>
-            <Image className="image" width="1160" height="800" src={`/${products.spc.image}`} />
+            <Image className="image" width="1160" height="800" src={`/${products.lvf.image}`} />
           </div>
 
           <Tabs>
@@ -28,7 +28,7 @@ const Products = () => {
 
             <TabPanel className="tab-content">
               <div className='pills-wrapper' >
-                {products.spc.description.map((item, idx) => (
+                {products.lvf.description.map((item, idx) => (
                   <p className="pill" key={idx}>{item}</p>
                 ))}
               </div>
@@ -36,20 +36,20 @@ const Products = () => {
 
             <TabPanel className="tab-content">
               <div className='pills-wrapper' >
-                {products.spc.benefits.map((item, idx) => (
+                {products.lvf.benefits.map((item, idx) => (
                   <p className="pill" key={idx}>{item}</p>
                 ))}
               </div>
             </TabPanel>
 
             <TabPanel className="tab-content">
-              <p className="text">{products.spc.installation.text}</p>
+              <p className="text">{products.lvf.installation.text}</p>
               <div className="image-wrapper">
-                <Image width="640" height="300" src={`/${products.spc.installation.imageA}`} />
+                <Image width="640" height="300" src={`/${products.lvf.installation.imageA}`} />
               </div>
 
               <div className="image-wrapper">
-                <Image width="640" height="300" src={`/${products.spc.installation.imageB}`} />
+                <Image width="640" height="300" src={`/${products.lvf.installation.imageB}`} />
               </div>
 
             </TabPanel>
