@@ -6515,6 +6515,11 @@ header.simple-header .path a:after {
   box-sizing: border-box;
 }
 
+.products .preview > div {
+  flex-wrap: nowrap;
+ 
+}
+
 .main-image {
   border-radius: 2em;
   margin-bottom: 4em;

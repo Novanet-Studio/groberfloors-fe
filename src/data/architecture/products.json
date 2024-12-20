@@ -25,6 +25,32 @@
     }
   },
 
+  "wp": {
+    "name": "Wall Panels",
+    "image": "arch/img/products/groberfloors-product-wall-panels.svg",
+    "description": [
+      "Thickness 5.5mm",
+      "20mils wear layer",
+      "ixpe 1mm (pad)",
+      "12pcs per box",
+      "28.84 sqf per box",
+      "100% Waterproof",
+      "Unilin click"
+    ],
+    "benefits": [
+      "100% Waterproof",
+      "Highly durable",
+      "Eco-friendly",
+      "Easy to maintain",
+      "Easy to install"
+    ],
+    "installation": {
+      "text": "The installation of Uniclic is fast and simple. The Uniclic profile can be classified as an angle or basic locking profile, which means it has to be installed by an angular rotation movement. Besides this angular installation method, Uniclic can also be installed in a horizontal way by snapping the planks into each other.",
+      "imageA": "arch/img/products/groberfloors-uniclic-system.svg",
+      "imageB": "arch/img/products/groberfloors-uniclic-system-2.webp"
+    }
+  },
+
   "baseboards": [
     {
       "name": "Baseboard 5163 primed",
@@ -57,3 +83,6 @@
     }
   ]
 }
+
+
+

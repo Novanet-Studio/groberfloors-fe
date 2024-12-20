@@ -6,7 +6,7 @@ import AppLayout from "../layouts/app-layout";
 //= Components
 import Swiper from "../components/Architecture/Swiper";
 import Hero from "../components/Architecture/Hero";
-import ProductsPreview from "../components/Architecture/Products/preview";
+import Products from "../components/Architecture/Products";
 import Colors from "../components/Architecture/Colors";
 import Accesories from "../components/Architecture/Accesories";
 import Baseboards from "../components/Architecture/Baseboards";
@@ -35,8 +35,8 @@ const HomeArchitecture = () => {
             className="bg-pattern bg-img"
             style={{ backgroundImage: "url('arch/img/pattern-bg.svg')" }}
           ></div>
-          
-          <ProductsPreview />
+          <Hero/>
+          <Products />
           <Colors />
           <Accesories />
           <Baseboards />
