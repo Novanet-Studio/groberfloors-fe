@@ -35,14 +35,10 @@ const HomeArchitecture = () => {
             className="bg-pattern bg-img"
             style={{ backgroundImage: "url('arch/img/pattern-bg.svg')" }}
           ></div>
-          <Hero/>
-          <Products />
-          <Colors />
-          <Accesories />
-          <Baseboards />
-          <Highlight />
-          <Contact />
-          <Footer />
+          <Hero  productType="wp"/>
+          <Products productType="wp" />
+          <Colors  productType="wp" />
+          <Accesories productType="wp" />
         </main>
       </AppLayout>
     </>

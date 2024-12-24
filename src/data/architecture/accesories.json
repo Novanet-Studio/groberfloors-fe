@@ -1,30 +1,55 @@
-[
-  {
-    "name": "Double Round",
-    "image": "arch/img/products/accesories/groberfloors-accesories-double-round.webp"
-  },
-  {
-    "name": "L Moldign Square",
-    "image": "arch/img/products/accesories/groberfloors-accesories-l-molding-square.webp"
-  },
-  {
-    "name": "L Round",
-    "image": "arch/img/products/accesories/groberfloors-accesories-l-round.webp"
-  },
-  {
-    "name": "Reducer Oversize",
-    "image": "arch/img/products/accesories/groberfloors-accesories-reducer-oversize.webp"
-  },
-  {
-    "name": "Round Step",
-    "image": "arch/img/products/accesories/groberfloors-accesories-round-step.webp"
-  },
-  {
-    "name": "Square Step",
-    "image": "arch/img/products/accesories/groberfloors-accesories-square-step.webp"
-  },
-  {
-    "name": "T Molding",
-    "image": "arch/img/products/accesories/groberfloors-accesories-t-molding.webp"
-  }
-]
+{
+  "lvf": [
+    {
+      "name": "Double Round",
+      "image": "arch/img/products/accesories/groberfloors-accesories-double-round.webp"
+    },
+    {
+      "name": "L Moldign Square",
+      "image": "arch/img/products/accesories/groberfloors-accesories-l-molding-square.webp"
+    },
+    {
+      "name": "L Round",
+      "image": "arch/img/products/accesories/groberfloors-accesories-l-round.webp"
+    },
+    {
+      "name": "Reducer Oversize",
+      "image": "arch/img/products/accesories/groberfloors-accesories-reducer-oversize.webp"
+    },
+    {
+      "name": "Round Step",
+      "image": "arch/img/products/accesories/groberfloors-accesories-round-step.webp"
+    },
+    {
+      "name": "Square Step",
+      "image": "arch/img/products/accesories/groberfloors-accesories-square-step.webp"
+    },
+    {
+      "name": "T Molding",
+      "image": "arch/img/products/accesories/groberfloors-accesories-t-molding.webp"
+    }
+  ],
+  
+  "wp": [
+    {
+      "name": "Liston",
+      "image": "arch/img/products/accesories/groberfloors-classification-Liston.webp"
+    },
+    {
+      "name": "Patio",
+      "image": "arch/img/products/accesories/groberfloors-classification-patio.webp"
+    },
+    {
+      "name": "Plane",
+      "image": "arch/img/products/accesories/groberfloors-classification-plane.webp"
+    },
+    {
+      "name": "Square",
+      "image": "arch/img/products/accesories/groberfloors-classification-square.webp"
+    },
+    {
+      "name": "Flat",
+      "image": "arch/img/products/accesories/groberfloors-classification-flat.webp"
+    }
+  ]
+}

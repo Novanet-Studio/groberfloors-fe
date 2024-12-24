@@ -1,42 +1,62 @@
-[
-  {
-    "image": "arch/img/products/colors/groberfloors-color-alaskan-oak.webp",     
-    "title": "Alaskan Oak"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-artic-white.webp",     
-    "title": "Artic White"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-bone-white.webp",     
-    "title": "Bone White"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-cappuccino.webp",     
-    "title": "Cappuccino"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-keystone-white.webp",     
-    "title": "Keystone White"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-late-oak.webp",     
-    "title": "Late Oak"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-light-brown.webp",     
-    "title": "Light Brown"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-light-grey.webp",     
-    "title": "Light Grey"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-urban-grey.webp",     
-    "title": "Urban Grey"   
-  },
-  {
-    "image": "arch/img/products/colors/groberfloors-color-water-oak.webp",     
-    "title": "Water Oak"   
-  }
-]
+{
+  "lvf": [
+    {
+      "image": "arch/img/products/colors/groberfloors-color-alaskan-oak.webp",
+      "title": "Alaskan Oak"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-artic-white.webp",
+      "title": "Artic White"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-bone-white.webp",
+      "title": "Bone White"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-cappuccino.webp",
+      "title": "Cappuccino"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-keystone-white.webp",
+      "title": "Keystone White"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-late-oak.webp",
+      "title": "Late Oak"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-light-brown.webp",
+      "title": "Light Brown"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-light-grey.webp",
+      "title": "Light Grey"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-urban-grey.webp",
+      "title": "Urban Grey"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-water-oak.webp",
+      "title": "Water Oak"
+    }
+  ],
+  "wp": [
+    {
+      "image": "arch/img/products/colors/groberfloors-color-eucalyptus.webp",
+      "title": "Eucalyptus"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-gray.webp",
+      "title": "Gray"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-hue.webp",
+      "title": "Hue"
+    },
+    {
+      "image": "arch/img/products/colors/groberfloors-color-sand.webp",
+      "title": "Sand"
+    }
+  ]
+}

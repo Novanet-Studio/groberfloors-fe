@@ -21,7 +21,7 @@ const HomeArchitecture = () => {
   }, []);
 
 
-
+  
   return (
     <>
       <Head>
@@ -35,14 +35,11 @@ const HomeArchitecture = () => {
             className="bg-pattern bg-img"
             style={{ backgroundImage: "url('arch/img/pattern-bg.svg')" }}
           ></div>
-          <Hero/>
-          <Products />
-          <Colors />
-          <Accesories />
+          <Hero productType="lvf"/>
+          <Products productType="lvf" />
+          <Colors productType="lvf" />
+          <Accesories productType="lvf" />
           <Baseboards />
-          <Highlight />
-          <Contact />
-          <Footer />
         </main>
       </AppLayout>
     </>

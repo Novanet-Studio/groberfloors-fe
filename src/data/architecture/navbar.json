@@ -1,11 +1,7 @@
 [
   {
     "name": "Home",
-    "href": ""
-  },
-  {
-    "name": "About our product",
-    "href": "#0"
+    "href": "/"
   },
   {
     "name": "Products",
@@ -17,7 +13,7 @@
   },
   {
     "name": "Wall Panels",
-    "href": "/wallpanels"
+    "href": "/wallpanel"
   },
   {
     "name": "Contact",

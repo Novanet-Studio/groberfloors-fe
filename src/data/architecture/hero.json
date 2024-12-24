@@ -1,7 +1,17 @@
 {
-  "percentage": "100%",
-  "text": "Luxury Vinyl is a type of rigid vinyl flooring that is designed to mimic the look and feel of natural materials like wood or stone",
-  "text2": "It is composed of several layers. The topmost layer is a transparent wear layer that provides protection against scratches, stains, and fading.",
-  "text3": "It is followed by a decorative layer that features a high-resolution image of wood, stone, or other patterns.",
-  "text4": "The core layer is made of a stone plastic composite, which is a mixture of natural limestone powder, polyvinyl chloride (PVC), and stabilizers. Finally, there is an underlayment layer that provides additional sound insulation and cushioning."
+  "lvf": {
+    "percentage": "100%",
+    "text": "Luxury Vinyl Floors",
+    "text2": "High-quality, durable, and stylish flooring solutions.",
+    "text3": "Perfect for homes and commercial spaces.",
+    "text4": "Waterproof, pet-friendly, and easy to install.",
+    "image": "arch/img/grobefloors-lvf-floor-installation.webp"
+  },
+  "wp": {
+    "percentage": "100%",
+    "text": "Wall panels Build what you dream",
+    "text2": "The WPC panel (Wood Plastic Composite) allows all this through a productiontechnique that requires a lot of less wood, which uses recycledmaterials, obtaining equally satisfactory results and even much more creatives",
+    "image": "arch/img/grobefloors-wp-floor-installation.webp"
+  }
 }
+
