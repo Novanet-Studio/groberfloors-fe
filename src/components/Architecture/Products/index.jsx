@@ -12,6 +12,11 @@ const Products = ({ productType = 'lvf' }) => {
     return <p>Product not found.</p>; // Mostrar error si no existe el producto
   }
 
+  // Títulos dinámicos para las pestañas
+  const tabs = productType === 'wp' 
+    ? ['Warranty', 'Transport', 'Warranty Annulment']
+    : ['Description', 'Benefits', 'Installation'];
+
   return (
     <section className="products section-padding" data-scroll-index="2">
       <div className="container">
@@ -33,11 +38,12 @@ const Products = ({ productType = 'lvf' }) => {
 
           <Tabs>
             <TabList>
-              <Tab>Description</Tab>
-              <Tab>Benefits</Tab>
-              <Tab>Installation</Tab>
+              {tabs.map((tabTitle, idx) => (
+                <Tab key={idx}>{tabTitle}</Tab>
+              ))}
             </TabList>
 
+            {/* Primera pestaña */}
             <TabPanel className="tab-content">
               <div className="pills-wrapper">
                 {product.description.map((item, idx) => (
@@ -46,6 +52,7 @@ const Products = ({ productType = 'lvf' }) => {
               </div>
             </TabPanel>
 
+            {/* Segunda pestaña */}
             <TabPanel className="tab-content">
               <div className="pills-wrapper">
                 {product.benefits.map((item, idx) => (
@@ -54,24 +61,39 @@ const Products = ({ productType = 'lvf' }) => {
               </div>
             </TabPanel>
 
+            {/* Tercera pestaña: contenido dinámico */}
             <TabPanel className="tab-content">
-              <p className="text">{product.installation.text}</p>
-              <div className="image-wrapper">
-                <Image
-                  width="640"
-                  height="300"
-                  src={`/${product.installation.imageA}`}
-                  alt="Installation Step A"
-                />
-              </div>
-              <div className="image-wrapper">
-                <Image
-                  width="640"
-                  height="300"
-                  src={`/${product.installation.imageB}`}
-                  alt="Installation Step B"
-                />
-              </div>
+              {productType === 'wp' ? (
+                <div className="text">
+                  <ul className="list-disc pl-5 space-y-4">
+                    {product.installation.text.map((item, idx) => (
+                      <li key={idx} className="text-white">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <>
+                  <p className="text">{product.installation.text}</p>
+                  <div className="image-wrapper">
+                    <Image
+                      width="640"
+                      height="300"
+                      src={`/${product.installation.imageA}`}
+                      alt="Installation Step A"
+                    />
+                  </div>
+                  <div className="image-wrapper">
+                    <Image
+                      width="640"
+                      height="300"
+                      src={`/${product.installation.imageB}`}
+                      alt="Installation Step B"
+                    />
+                  </div>
+                </>
+              )}
             </TabPanel>
           </Tabs>
         </div>
@@ -81,3 +103,6 @@ const Products = ({ productType = 'lvf' }) => {
 };
 
 export default Products;
+
+
+

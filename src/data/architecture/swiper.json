@@ -1,0 +1,31 @@
+{
+  "lvf": [
+    {
+      "bg": "arch/img/slid/groberfloors-kitchen-floor-2.webp",
+      "number": "01",
+      "title": ["Luxury Vinyl flooring is known for its exceptional durability"],
+      "desc": "The stone plastic composite core layer provides rigidity and stability, making it highly resistant to impacts, dents, and scratches. It can withstand heavy foot traffic, making it suitable for both residential and commercial settings"
+    },
+    {
+      "bg": "arch/img/slid/groberfloors-showroom.webp",
+      "number": "02",
+      "title": ["Luxury Vinyl flooring is waterproof"],
+      "desc": "It can handle exposure to water and moisture without warping or damage. This makes it an ideal choice for areas prone to spills or humidity, such as kitchens, bathrooms, and basements."
+    },
+    {
+      "bg": "arch/img/slid/groberfloors-kitchen-floor.webp",
+      "number": "03",
+      "title": ["Luxury Vinyl flooring is designed to replicate natural materials"],
+      "desc": "The high-resolution decorative layer features intricate patterns and textures, providing a realistic visual appeal. With advancements in printing technology, Luxury Vinyl flooring can closely mimic the natural beauty of hardwood or stone floors."
+    }
+  ],
+  "wp": [
+    {
+      "bg": "arch/img/slid/groberfloors-wallpanels-poolroom.webp",
+      "number": "01",
+      "title": ["Wall panels are composed of wood and plastic"],
+      "desc": "Raising awareness of the use of natural resources and sustainability of the ecosystem, has achieved the production of materials friendlier to the planet and less destructive with the forest mass."
+    }
+  ]
+}
+

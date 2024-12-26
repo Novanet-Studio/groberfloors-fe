@@ -6520,6 +6520,46 @@ header.simple-header .path a:after {
  
 }
 
+.text ul {
+  list-style-type: none; /* Elimina viñetas predeterminadas */
+  padding-left: 20px; /* Espaciado desde el margen izquierdo */
+}
+
+.text ul li {
+  position: relative; /* Permite usar pseudo-elementos como ::before */
+  margin-bottom: 16px; /* Espaciado entre los puntos de la lista */
+  font-size: 28px; /* Tamaño del texto */
+  line-height: 40px; /* Altura de línea */
+  color: #C4C6C7 !important; /* Color gris claro con mayor especificidad */
+}
+
+.text ul li::before {
+  content: '•'; /* Añade el símbolo de la viñeta */
+  color: #ff0000; /* Color rojo para la viñeta */
+  position: absolute; /* Alinea la viñeta a la izquierda del texto */
+  left: -20px; /* Espaciado desde el margen izquierdo */
+  font-size: 28px; /* Asegura que la viñeta sea del mismo tamaño que el texto */
+}
+
+
+
+
+
+.container-principal{
+  max-width: 100%;
+}
+
+.container-title{
+  display: flex;
+  gap: 23rem;
+}
+
+.container-preview{
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem
+}
+
 .main-image {
   border-radius: 2em;
   margin-bottom: 4em;

@@ -29,7 +29,7 @@ const HomeArchitecture = () => {
       </Head>
 
       <AppLayout type="architecture" links={Navbar}>
-        <Swiper />
+        <Swiper Header productType="wp" />
         <main className="position-re">
           <div
             className="bg-pattern bg-img"

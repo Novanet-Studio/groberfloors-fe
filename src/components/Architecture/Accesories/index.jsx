@@ -11,7 +11,7 @@ const Accesories = ({ productType = "lvf" }) => {
   // Títulos definidos para cada tipo de producto
   const titles = {
     lvf: "Accessories",
-    wp: "WPC Classification",
+    wp: "Classification",
     default: "Accessories"
   };
 

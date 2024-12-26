@@ -13,13 +13,22 @@ const Portfolio = ({ productType = "lvf" }) => {
     return <p>No colors available for this product type.</p>;
   }
 
+  const titles = {
+    lvf: "Accessories",
+    wp: "WPC colors",
+    default: "Accessories"
+  };
+
+  // Selecciona el título correspondiente o usa el valor por defecto
+  const title = titles[productType] || titles.default;
+
   return (
     <section className="work-crsol-clum section-padding pt-50">
       <div className="container">
         <div className="sec-head mb-50">
           <div className="flex">
             <div className="m-title valign">
-              <h3>{`${productType.toUpperCase()} Colors`}</h3>
+            <h3>{title}</h3>
             </div>
           </div>
         </div>

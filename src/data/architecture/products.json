@@ -22,7 +22,39 @@
       "text": "The installation of Uniclic is fast and simple. The Uniclic profile can be classified as an angle or basic locking profile, which means it has to be installed by an angular rotation movement. Besides this angular installation method, Uniclic can also be installed in a horizontal way by snapping the planks into each other.",
       "imageA": "arch/img/products/groberfloors-uniclic-system.svg",
       "imageB": "arch/img/products/groberfloors-uniclic-system-2.webp"
-    }
+    },
+
+    "baseboards": [
+      {
+        "name": "Baseboard 5163 primed",
+        "sizes": ["9/16”x 5 1/4” x 16” LF"],
+        "image": "arch/img/products/baseboards/groberfloors-baseboard-5163-primed.webp"
+      },
+      {
+        "name": "Baseboard 5180 primed",
+        "sizes": ["9/16”x 5 1/4” x 16” LF"],
+        "image": "arch/img/products/baseboards/groberfloors-baseboard-5180-primed.webp"
+      },
+      {
+        "name": "Primed boards",
+        "sizes": [
+          "BB1x4 9/16” x 3 1/2” x 17 LF",
+          "BB1x6 9/16”x 5 1/2”x 16” LF",
+          "BB1x8 9/16”x 7 1/4”x 16” LF"
+        ],
+        "image": "arch/img/products/baseboards/groberfloors-baseboard-primed-boards.webp"
+      },
+      {
+        "name": "Crowns",
+        "sizes": ["CR45 9/16”x 5 1/4” x 16” LF"],
+        "image": "arch/img/products/baseboards/groberfloors-baseboard-crowns.webp"
+      },
+      {
+        "name": "Quarter round",
+        "sizes": ["QR8 11/16”x11/16”x16” LF"],
+        "image": "arch/img/products/baseboards/groberfloors-baseboard-quarter-round.webp"
+      }
+    ]
   },
 
   "wp": {
@@ -45,43 +77,15 @@
       "Easy to install"
     ],
     "installation": {
-      "text": "The installation of Uniclic is fast and simple. The Uniclic profile can be classified as an angle or basic locking profile, which means it has to be installed by an angular rotation movement. Besides this angular installation method, Uniclic can also be installed in a horizontal way by snapping the planks into each other.",
-      "imageA": "arch/img/products/groberfloors-uniclic-system.svg",
-      "imageB": "arch/img/products/groberfloors-uniclic-system-2.webp"
-    }
-  },
+      "text": [
+        "All guarantees will be no longer be valid due to events not attributable to the manufacturer, such as natural disasters (earthquakes, tornados, and floods) or accidents such as fires or impacts of objects on the product that could damage it, improper use of the product for other purposes than those considered by the manufacturer.",
+        "The damage that could be caused by cleaning with abrasive chemical agents or caused scratches is not covered by the guarantee, considering these, those that are mentioned after the reception of the panel or the signature of conformity of delivery and installation on site, as appropriate to the contracted service.",
+        "It is considered null and void, when the installation is the responsibility of the buyer, serious defects are detected in it that could partially or totally null the product guarantees due to direct affectation."
+      ]
+  }
+  }
 
-  "baseboards": [
-    {
-      "name": "Baseboard 5163 primed",
-      "sizes": ["9/16”x 5 1/4” x 16” LF"],
-      "image": "arch/img/products/baseboards/groberfloors-baseboard-5163-primed.webp"
-    },
-    {
-      "name": "Baseboard 5180 primed",
-      "sizes": ["9/16”x 5 1/4” x 16” LF"],
-      "image": "arch/img/products/baseboards/groberfloors-baseboard-5180-primed.webp"
-    },
-    {
-      "name": "Primed boards",
-      "sizes": [
-        "BB1x4 9/16” x 3 1/2” x 17 LF",
-        "BB1x6 9/16”x 5 1/2”x 16” LF",
-        "BB1x8 9/16”x 7 1/4”x 16” LF"
-      ],
-      "image": "arch/img/products/baseboards/groberfloors-baseboard-primed-boards.webp"
-    },
-    {
-      "name": "Crowns",
-      "sizes": ["CR45 9/16”x 5 1/4” x 16” LF"],
-      "image": "arch/img/products/baseboards/groberfloors-baseboard-crowns.webp"
-    },
-    {
-      "name": "Quarter round",
-      "sizes": ["QR8 11/16”x11/16”x16” LF"],
-      "image": "arch/img/products/baseboards/groberfloors-baseboard-quarter-round.webp"
-    }
-  ]
+
 }
 
 

@@ -39,7 +39,7 @@ const HomeArchitecture = () => {
           <Products productType="lvf" />
           <Colors productType="lvf" />
           <Accesories productType="lvf" />
-          <Baseboards />
+          <Baseboards productType="lvf"  />
         </main>
       </AppLayout>
     </>
