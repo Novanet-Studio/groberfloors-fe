@@ -38,6 +38,7 @@ const HomeArchitecture = () => {
           <ProductsPreview />
           <Highlight />
           <Contact />
+     
           <Footer />
         </main>
       </AppLayout>

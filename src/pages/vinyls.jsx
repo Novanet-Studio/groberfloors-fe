@@ -42,6 +42,7 @@ const HomeArchitecture = () => {
           <Baseboards productType="lvf"  />
         </main>
       </AppLayout>
+      <Contact />
     </>
   );
 };

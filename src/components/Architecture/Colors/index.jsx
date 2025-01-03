@@ -14,9 +14,9 @@ const Portfolio = ({ productType = "lvf" }) => {
   }
 
   const titles = {
-    lvf: "Accessories",
+    lvf: "Colors",
     wp: "WPC colors",
-    default: "Accessories"
+    default: "Colors"
   };
 
   // Selecciona el título correspondiente o usa el valor por defecto

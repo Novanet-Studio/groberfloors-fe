@@ -41,6 +41,7 @@ const HomeArchitecture = () => {
           <Accesories productType="wp" />
         </main>
       </AppLayout>
+      <Contact />
     </>
   );
 };
