@@ -10,7 +10,7 @@ const ProductsPreview = () => {
               <h3>Luxury Vinyl Floor (Waterproof)</h3>
             </div>
             <div className="m-title valign">
-              <h3>Luxury Vinyl Floor (Waterproof)</h3>
+              <h3>Wall Panels</h3>
             </div>
           </div>
 

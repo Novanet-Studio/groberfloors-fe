@@ -2,54 +2,125 @@
   "lvf": [
     {
       "name": "Double Round",
-      "image": "arch/img/products/accesories/groberfloors-accesories-double-round.webp"
+      "image": "arch/img/products/accesories/groberfloors-accesories-double-round.webp",
+      "description": "Used for smooth floor transitions between areas of the same height.",
+      "details": {
+        "material": "PVC",
+        "weight": "0.5kg",
+        "dimensions": "2m x 5cm x 2cm"
+      }
     },
     {
-      "name": "L Moldign Square",
-      "image": "arch/img/products/accesories/groberfloors-accesories-l-molding-square.webp"
+      "name": "L Molding Square",
+      "image": "arch/img/products/accesories/groberfloors-accesories-l-molding-square.webp",
+      "description": "Perfect for edge finishes and transitions between different floor heights.",
+      "details": {
+        "material": "Aluminum",
+        "weight": "0.8kg",
+        "dimensions": "2m x 3cm x 3cm"
+      }
     },
     {
       "name": "L Round",
-      "image": "arch/img/products/accesories/groberfloors-accesories-l-round.webp"
+      "image": "arch/img/products/accesories/groberfloors-accesories-l-round.webp",
+      "description": "Ideal for rounded corners and transitions between curved surfaces.",
+      "details": {
+        "material": "Plastic",
+        "weight": "0.6kg",
+        "dimensions": "1.5m x 4cm x 2cm"
+      }
     },
     {
       "name": "Reducer Oversize",
-      "image": "arch/img/products/accesories/groberfloors-accesories-reducer-oversize.webp"
+      "image": "arch/img/products/accesories/groberfloors-accesories-reducer-oversize.webp",
+      "description": "Perfect for transitioning between floors of different heights.",
+      "details": {
+        "material": "Wood",
+        "weight": "1.2kg",
+        "dimensions": "2.5m x 5cm x 1cm"
+      }
     },
     {
       "name": "Round Step",
-      "image": "arch/img/products/accesories/groberfloors-accesories-round-step.webp"
+      "image": "arch/img/products/accesories/groberfloors-accesories-round-step.webp",
+      "description": "Designed for creating rounded stair edges.",
+      "details": {
+        "material": "Vinyl",
+        "weight": "0.9kg",
+        "dimensions": "2m x 6cm x 2cm"
+      }
     },
     {
       "name": "Square Step",
-      "image": "arch/img/products/accesories/groberfloors-accesories-square-step.webp"
+      "image": "arch/img/products/accesories/groberfloors-accesories-square-step.webp",
+      "description": "Best for square stair edges and clean finishes.",
+      "details": {
+        "material": "Aluminum",
+        "weight": "1.1kg",
+        "dimensions": "2m x 5cm x 2cm"
+      }
     },
     {
       "name": "T Molding",
-      "image": "arch/img/products/accesories/groberfloors-accesories-t-molding.webp"
+      "image": "arch/img/products/accesories/groberfloors-accesories-t-molding.webp",
+      "description": "Used for even transitions between two floor types.",
+      "details": {
+        "material": "PVC",
+        "weight": "0.7kg",
+        "dimensions": "2m x 4cm x 2cm"
+      }
     }
   ],
-  
   "wp": [
     {
       "name": "Liston",
-      "image": "arch/img/products/accesories/groberfloors-classification-Liston.webp"
+      "image": "arch/img/products/accesories/groberfloors-classification-Liston.webp",
+      "description": "Liston panels are perfect for decorative uses in indoor spaces.",
+      "details": {
+        "material": "Wood-Plastic Composite",
+        "weight": "1.2kg",
+        "dimensions": "3m x 6cm x 2cm"
+      }
     },
     {
       "name": "Patio",
-      "image": "arch/img/products/accesories/groberfloors-classification-patio.webp"
+      "image": "arch/img/products/accesories/groberfloors-classification-patio.webp",
+      "description": "Patio panels are weather-resistant and ideal for outdoor use.",
+      "details": {
+        "material": "Plastic",
+        "weight": "2.5kg",
+        "dimensions": "4m x 8cm x 3cm"
+      }
     },
     {
       "name": "Plane",
-      "image": "arch/img/products/accesories/groberfloors-classification-plane.webp"
+      "image": "arch/img/products/accesories/groberfloors-classification-plane.webp",
+      "description": "Plane panels provide a flat and clean aesthetic for interiors.",
+      "details": {
+        "material": "Fiberboard",
+        "weight": "1.8kg",
+        "dimensions": "3.5m x 7cm x 2.5cm"
+      }
     },
     {
       "name": "Square",
-      "image": "arch/img/products/accesories/groberfloors-classification-square.webp"
+      "image": "arch/img/products/accesories/groberfloors-classification-square.webp",
+      "description": "Square panels are durable and environmentally friendly.",
+      "details": {
+        "material": "Recycled Wood",
+        "weight": "2kg",
+        "dimensions": "3m x 5cm x 2cm"
+      }
     },
     {
       "name": "Flat",
-      "image": "arch/img/products/accesories/groberfloors-classification-flat.webp"
+      "image": "arch/img/products/accesories/groberfloors-classification-flat.webp",
+      "description": "Flat panels offer minimalistic design for modern interiors.",
+      "details": {
+        "material": "Laminate",
+        "weight": "1.5kg",
+        "dimensions": "2.8m x 6cm x 2cm"
+      }
     }
   ]
 }
