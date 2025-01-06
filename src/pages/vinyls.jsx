@@ -14,6 +14,8 @@ import Highlight from "../components/Architecture/Highlight";
 import Contact from "../components/Architecture/Contact";
 import Footer from "../components/Footers/ArchitectureFooter";
 import Navbar from "../data/architecture/navbar.json";
+import AccesoriesPreview from "../components/Architecture/Accesories/preview";
+
 
 const HomeArchitecture = () => {
   useEffect(() => {
@@ -38,7 +40,7 @@ const HomeArchitecture = () => {
           <Hero productType="lvf"/>
           <Products productType="lvf" />
           <Colors productType="lvf" />
-          <Accesories productType="lvf" />
+          <AccesoriesPreview productType="lvf" />
           <Baseboards productType="lvf"  />
         </main>
       </AppLayout>

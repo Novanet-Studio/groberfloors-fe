@@ -74,53 +74,79 @@
   "wp": [
     {
       "name": "Liston",
+      "number": "1",
       "image": "arch/img/products/accesories/groberfloors-classification-Liston.webp",
-      "description": "Liston panels are perfect for decorative uses in indoor spaces.",
+      "infoImage": "arch/img/products/accesories/info-liston.svg",
+      "description": "You can use the LISTON reference in your walls or in skies, giving it a touch warm and unique to your spaces.",
       "details": {
-        "material": "Wood-Plastic Composite",
+        "long": "3m",
+        "width": "6cm",
+        "depth": "2cm",
+        "finish": "Smooth",
         "weight": "1.2kg",
-        "dimensions": "3m x 6cm x 2cm"
+        "composition": "Wood-Plastic Composite"
       }
     },
     {
       "name": "Patio",
+      "number": "2",
       "image": "arch/img/products/accesories/groberfloors-classification-patio.webp",
+      "infoImage": "arch/img/products/accesories/info-patio.webp",
       "description": "Patio panels are weather-resistant and ideal for outdoor use.",
       "details": {
-        "material": "Plastic",
+        "long": "4m",
+        "width": "8cm",
+        "depth": "3cm",
+        "finish": "Textured",
         "weight": "2.5kg",
-        "dimensions": "4m x 8cm x 3cm"
+        "composition": "Plastic"
       }
     },
     {
       "name": "Plane",
+      "number": "3",
       "image": "arch/img/products/accesories/groberfloors-classification-plane.webp",
+      "infoImage": "arch/img/products/accesories/info-plane.webp",
       "description": "Plane panels provide a flat and clean aesthetic for interiors.",
       "details": {
-        "material": "Fiberboard",
+        "long": "3.5m",
+        "width": "7cm",
+        "depth": "2.5cm",
+        "finish": "Matte",
         "weight": "1.8kg",
-        "dimensions": "3.5m x 7cm x 2.5cm"
+        "composition": "Fiberboard"
       }
     },
     {
       "name": "Square",
+      "number": "4",
       "image": "arch/img/products/accesories/groberfloors-classification-square.webp",
+      "infoImage": "arch/img/products/accesories/info-square.webp",
       "description": "Square panels are durable and environmentally friendly.",
       "details": {
-        "material": "Recycled Wood",
+        "long": "3m",
+        "width": "5cm",
+        "depth": "2cm",
+        "finish": "Smooth",
         "weight": "2kg",
-        "dimensions": "3m x 5cm x 2cm"
+        "composition": "Recycled Wood"
       }
     },
     {
       "name": "Flat",
+      "number": "5",
       "image": "arch/img/products/accesories/groberfloors-classification-flat.webp",
+      "infoImage": "arch/img/products/accesories/info-flat.webp",
       "description": "Flat panels offer minimalistic design for modern interiors.",
       "details": {
-        "material": "Laminate",
+        "long": "2.8m",
+        "width": "6cm",
+        "depth": "2cm",
+        "finish": "Glossy",
         "weight": "1.5kg",
-        "dimensions": "2.8m x 6cm x 2cm"
+        "composition": "Laminate"
       }
     }
   ]
 }
+

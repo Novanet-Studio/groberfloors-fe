@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import Image from 'next/image'
 import accesoriesData from "../../../data/architecture/accesories.json";
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400&display=swap" rel="stylesheet"></link>
 
 const Accesories = ({ productType = "lvf" }) => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -60,55 +62,54 @@ const Accesories = ({ productType = "lvf" }) => {
               &times;
             </button>
 
-            {/* Encabezado */}
-            <div className="modal-header">
-              <h5 className="modal-number">{selectedItem.number || "01"}</h5>
-              <h2>{selectedItem.name}</h2>
-            </div>
-
-            <p className="modal-description">{selectedItem.description}</p>
-
-            {/* Cuerpo del Modal */}
             <div className="modal-body">
               {/* Sección Izquierda */}
-              <div className="modal-size">
-                <h4>Size</h4>
-                <ul>
-                  <li><strong>Long:</strong> {selectedItem.size?.long}</li>
-                  <li><strong>Width:</strong> {selectedItem.size?.width}</li>
-                  <li><strong>Depth:</strong> {selectedItem.size?.depth}</li>
-                  <li><strong>Finish:</strong> {selectedItem.size?.finish}</li>
-                  <li>
-                    <strong>Composition:</strong>{" "}
-                    {selectedItem.size?.composition}
-                  </li>
-                </ul>
-              </div>
+              <div className="modal-left">
+                <div className="modal-header">
+                  <h5 className="modal-number">{selectedItem.number || "01"}</h5>
+                  <h2>{selectedItem.name}</h2>
+                  <p className="modal-description">{selectedItem.description}</p>
+                </div>
 
-              {/* Sección Central */}
-              <div className="modal-diagram">
-                <img
-                  src={selectedItem.diagram}
-                  alt="Technical Diagram"
-                  className="diagram-image"
-                />
+                <div className="modal-size">
+                  <h4 className="text-size">Size</h4>
+                  <ul className="no-padding">
+                    <li><strong>Long:</strong> {selectedItem.details?.long}</li>
+                    <li><strong>Width:</strong> {selectedItem.details?.width}</li>
+                    <li><strong>Depth:</strong> {selectedItem.details?.depth}</li>
+                    <li><strong>Finish:</strong> {selectedItem.details?.finish}</li>
+                    <li><strong>Weight:</strong> {selectedItem.details?.weight}</li>
+                    <li><strong>Composition:</strong> {selectedItem.details?.composition}</li>
+                  </ul>
+                </div>
+
+                <div className="composition-accessories">
+                  <div className="composition">
+                    <div className="modal-composition">
+                      <h4 className="text-composition">Composition</h4>
+                    </div>
+                    <Image src={selectedItem.compositionImage} alt="Composition" className="composition-image" />
+                  </div>
+                  <div className="composition">
+                    <div className="modal-composition">
+                      <h4 className="text-composition">Accessories</h4>
+                    </div>
+                    <img src={selectedItem.accessoriesImage} alt="Accessories" className="composition-image" />
+                  </div>
+                </div>
+
               </div>
 
               {/* Sección Derecha */}
-              <div className="modal-technical">
-                <h4>Technical Data</h4>
-                <ul>
-                  {selectedItem.technicalData?.map((data, idx) => (
-                    <li key={idx}>{data}</li>
-                  ))}
-                </ul>
+              <div className="modal-right">
+                <div className="modal-image">
+                  <img src={selectedItem.infoImage} alt={selectedItem.name} />
+                </div>
+                <div className="modal-info">
+                  <h4>Additional Information</h4>
+                  <p>{selectedItem.additionalInfo}</p>
+                </div>
               </div>
-            </div>
-
-            {/* Tabs Inferiores */}
-            <div className="modal-tabs">
-              <button className="tab-button">Composition</button>
-              <button className="tab-button">Accessories</button>
             </div>
           </div>
         </div>
@@ -134,10 +135,19 @@ const Accesories = ({ productType = "lvf" }) => {
           color: #fff;
           padding: 20px;
           border-radius: 10px;
-          width: 90%;
-          max-width: 800px;
+          width: auto;
+          height: 90vh;
+          max-width: 90%;
           position: relative;
           text-align: left;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+        }
+
+        .modal-image img{
+        width: auto;
+        height: 70vh;
         }
 
         .close {
@@ -152,64 +162,101 @@ const Accesories = ({ productType = "lvf" }) => {
           cursor: pointer;
         }
 
-        .modal-header {
-          display: flex;
-          align-items: center;
-          margin-bottom: 20px;
-        }
-
-        .modal-number {
-          background: #ff0000;
-          color: #fff;
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-right: 15px;
-        }
-
-        .modal-description {
-          margin-bottom: 20px;
-          font-size: 16px;
-          line-height: 1.7;
-          color: #c0c0c0;
-        }
-
         .modal-body {
           display: flex;
           gap: 20px;
+          height: 100%;
         }
 
-        .modal-size,
-        .modal-technical {
+        .modal-left {
           flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 50%;
         }
 
-        .modal-diagram {
-          flex: 1.5;
-          text-align: center;
+        .modal-right {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 50%;
         }
 
-        .diagram-image {
-          max-width: 100%;
-          border-radius: 5px;
+        .modal-header {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+          border-bottom: 0px;
         }
 
-        .modal-tabs {
-          margin-top: 20px;
-          text-align: center;
+        .modal-number {
+          background: #E31738;
+          color: #23262D;
+          width: 52.77px;
+          height: 75px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .modal-size {
+          background-color: #1F2229;
+          padding: 20px;
+          width: 489px;
+          height: 331px;
         }
 
-        .tab-button {
-          background: #ff0000;
-          color: #fff;
-          border: none;
-          padding: 10px 20px;
-          margin: 0 5px;
-          border-radius: 5px;
-          cursor: pointer;
+        .text-size {
+          font-size: 24px;
+          color: #E31738;
+        }
+
+        .modal-size ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .modal-size li {
+          font-size: 16px;
+          font-family: 'Syne', sans-serif;
+          border-bottom: 1px solid #C4C6C7;
+          width: 416px;
+          margin-top: 10px;
+        }
+
+        .composition-accessories {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+        }
+
+        .composition {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .modal-composition {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 21px;
+          border: 1px solid #FFFFFF;
+          width: 10.289rem;
+          height: 2.616rem;
+        }
+
+        .text-composition {
+          font-size: 1rem;
+        }
+
+        .composition-image {
+          width: 100%;
+          max-width: 10.289rem;
+          margin-top: 10px;
         }
       `}</style>
     </section>
@@ -217,6 +264,3 @@ const Accesories = ({ productType = "lvf" }) => {
 };
 
 export default Accesories;
-
-
-
