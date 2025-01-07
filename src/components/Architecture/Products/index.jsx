@@ -1,9 +1,12 @@
 import dynamic from 'next/dynamic';
-const Tabs = dynamic(import('react-tabs').then(mod => mod.Tabs), { ssr: false }); // disable ssr
-import { Tab, TabList, TabPanel } from 'react-tabs';
 import Image from 'next/image';
+import { Tab, TabList, TabPanel } from 'react-tabs';
+
 import products from "../../../data/architecture/products.json";
 import 'react-tabs/style/react-tabs.css';
+
+
+const Tabs = dynamic(import('react-tabs').then(mod => mod.Tabs), { ssr: false }); // disable ssr
 
 const Products = ({ productType = 'lvf' }) => {
   const product = products[productType]; // Seleccionar dinámicamente el producto
@@ -46,9 +49,13 @@ const Products = ({ productType = 'lvf' }) => {
             {/* Primera pestaña */}
             <TabPanel className="tab-content">
               <div className="pills-wrapper">
-                {product.description.map((item, idx) => (
-                  <p className="pill" key={idx}>{item}</p>
-                ))}
+              {
+                product.description.map((item, idx) => (
+                  <p className="pill" key={idx}>
+                    {item}
+                  </p>
+                ))
+              } 
               </div>
             </TabPanel>
 

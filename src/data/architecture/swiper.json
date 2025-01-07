@@ -23,9 +23,22 @@
     {
       "bg": "arch/img/slid/groberfloors-wallpanels-poolroom.webp",
       "number": "01",
-      "title": ["Wall panels are composed of wood and plastic"],
-      "desc": "Raising awareness of the use of natural resources and sustainability of the ecosystem, has achieved the production of materials friendlier to the planet and less destructive with the forest mass."
+      "title": ["Sustainable Panels for a better Future"],
+      "desc": "WPC panels offer a sustainable alternative to traditional wood. They are made with recycled materials and require significantly less wood, minimizing the impact on forests. This innovative approach allows for creative and eco-friendly construction while ensuring high-quality results."
+    },
+    {
+      "bg": "arch/img/slid/groberfloors-wallpanels-living-room.webp",
+      "number": "02",
+      "title": ["Reduce Your Environmental Footprint with WPC"],
+      "desc": "Choose WPC panels for a more environmentally conscious choice. This eco-friendly material uses recycled materials and significantly less wood, reducing your impact on the planet. WPC panels offer a sustainable and creative solution for various construction needs."
+    },
+    {
+      "bg": "arch/img/slid/groberfloors-wallpanels-bedroom.webp",
+      "number": "03",
+      "title": ["WPC Panels: Innovation for Sustainable Living"],
+      "desc": "Discover the innovative solution for sustainable living. Made with recycled materials and requiring minimal wood, WPC offers a more environmentally friendly alternative for construction projects. Experience the beauty and durability of WPC while contributing to a greener future."
     }
+
   ]
 }
 

@@ -68,47 +68,92 @@ const Accesories = ({ productType = "lvf" }) => {
                 <div className="modal-header">
                   <h5 className="modal-number">{selectedItem.number || "01"}</h5>
                   <h2>{selectedItem.name}</h2>
+                </div>
+                <div>
                   <p className="modal-description">{selectedItem.description}</p>
                 </div>
 
                 <div className="modal-size">
-                  <h4 className="text-size">Size</h4>
-                  <ul className="no-padding">
-                    <li><strong>Long:</strong> {selectedItem.details?.long}</li>
-                    <li><strong>Width:</strong> {selectedItem.details?.width}</li>
-                    <li><strong>Depth:</strong> {selectedItem.details?.depth}</li>
-                    <li><strong>Finish:</strong> {selectedItem.details?.finish}</li>
-                    <li><strong>Weight:</strong> {selectedItem.details?.weight}</li>
-                    <li><strong>Composition:</strong> {selectedItem.details?.composition}</li>
-                  </ul>
+                  <div className="modal-size-content">
+                    <h4 className="text-size">Size</h4>
+                    <ul className="no-padding">
+                      <li><strong>LONG:</strong> {selectedItem.details?.long}</li>
+                      <li><strong>WIDTH:</strong> {selectedItem.details?.width}</li>
+                      <li><strong>DEPTH:</strong> {selectedItem.details?.depth}</li>
+                      <li><strong>FINISH:</strong> {selectedItem.details?.finish}</li>
+                      <li><strong>WEIGHT:</strong> {selectedItem.details?.weight}</li>
+                      <li><strong>COMPOSITION:</strong> {selectedItem.details?.composition}</li>
+                    </ul>
+                  </div>
                 </div>
 
                 <div className="composition-accessories">
                   <div className="composition">
                     <div className="modal-composition">
-                      <h4 className="text-composition">Composition</h4>
+                      <h4 className="text-composition">{selectedItem.composition}</h4>
                     </div>
-                    <Image src={selectedItem.compositionImage} alt="Composition" className="composition-image" />
+                    <div className="composition-accesories-image">
+                      <Image src={selectedItem.compositionImage} width={110} height={110} />
+                    </div>
                   </div>
+
                   <div className="composition">
                     <div className="modal-composition">
-                      <h4 className="text-composition">Accessories</h4>
+                      <h4 className="text-composition">{selectedItem.accesories}</h4>
                     </div>
-                    <img src={selectedItem.accessoriesImage} alt="Accessories" className="composition-image" />
+                    {selectedItem.accesoriesImage && (
+                      <div className="composition-accesories-image">
+                        <Image src={selectedItem.accesoriesImage} width={140} height={140} />
+                      </div>
+                    )}
                   </div>
                 </div>
 
               </div>
 
               {/* Sección Derecha */}
-              <div className="modal-right">
+              <div className="modal-center">
                 <div className="modal-image">
-                  <img src={selectedItem.infoImage} alt={selectedItem.name} />
+                  <Image src={selectedItem.infoImage} width={900} height={900} alt={selectedItem.name} />
                 </div>
-                <div className="modal-info">
-                  <h4>Additional Information</h4>
-                  <p>{selectedItem.additionalInfo}</p>
+              </div>
+
+              <div className="modal-right">
+                <div className="modal-info-content">
+                  <h4 className="text-size">Technical data</h4>
+
+                  <div className="container-technical">
+                    <div className="principal-text-tecnical">
+                      <div className="principal-division">
+                        <h4>{selectedItem.technicalData?.applications}</h4>
+                      </div>
+                    </div>
+
+                    <div className="second-text-tecnical">
+                      <div className="divisions">
+                        <h4>{selectedItem.technicalData?.interiorDesign}</h4>
+                      </div>
+                      <div className="divisions">
+                        <h4>{selectedItem.technicalData?.divisions}</h4>
+                      </div>
+                    </div>
+
+                    <div className="second-text-tecnical">
+                      <div className="divisions">
+                        <h4>{selectedItem.technicalData?.pergolas}</h4>
+                      </div>
+                      {selectedItem.technicalData?.ceiling && (
+                        <div className="divisions">
+                          <h4>{selectedItem.technicalData.ceiling}</h4>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+
                 </div>
+
+
               </div>
             </div>
           </div>
@@ -131,7 +176,7 @@ const Accesories = ({ productType = "lvf" }) => {
         }
 
         .modal-content {
-          background: #2c2c2c;
+          background:#23262D;
           color: #fff;
           padding: 20px;
           border-radius: 10px;
@@ -144,20 +189,33 @@ const Accesories = ({ productType = "lvf" }) => {
           flex-direction: column;
           overflow: hidden;
         }
+          .modal-description{
+          font-size: 16px;
+          padding-left: 27px;
+          }
+
+        .modal-image{
+        display: flex;
+        align-items: center;
+        }
 
         .modal-image img{
         width: auto;
         height: 70vh;
+
         }
 
         .close {
           position: absolute;
           top: 10px;
           right: 20px;
-          font-size: 24px;
+          font-size: 20px;
           font-weight: bold;
-          background: none;
+          background: red;
+          border-radius: 50%;
           border: none;
+          width: 30px;
+          height: 30px;
           color: #fff;
           cursor: pointer;
         }
@@ -169,45 +227,66 @@ const Accesories = ({ productType = "lvf" }) => {
         }
 
         .modal-left {
-          flex: 1;
+          
           display: flex;
           flex-direction: column;
-          gap: 20px;
-          width: 50%;
+          gap: 10px;
+          width: 30%;
         }
 
-        .modal-right {
+        .modal-center {
           flex: 1;
-          display: flex;
-          flex-direction: column;
           gap: 20px;
-          width: 50%;
+          width: 40%;
+          display: flex;
+        }
+
+        .container-technical{
+            height: 100%;
+            padding-top: 30px;
+        }
+
+        .modal-right{
+        width: 30%;
+        padding-top: 38px
+        }
+
+        .modal-info-content{
+          background-color: #1F2229;
+          padding: 30px;
+          width: 489px;
+          height: 331px;
         }
 
         .modal-header {
           display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 5px;
           border-bottom: 0px;
+          justify-content: left;
+          gap: 15px;
         }
 
         .modal-number {
           background: #E31738;
           color: #23262D;
-          width: 52.77px;
-          height: 75px;
+          font-size: 35px;
+          width: 40px;
+          height: 50px;
           display: flex;
           justify-content: center;
           align-items: center;
         }
         
         .modal-size {
+        display: flex;
+        justify-content: center;
+        }
+
+        .modal-size-content {
           background-color: #1F2229;
           padding: 20px;
-          width: 489px;
-          height: 331px;
-        }
+          width: 445px;
+          height: 275px;
+      }
 
         .text-size {
           font-size: 24px;
@@ -223,14 +302,23 @@ const Accesories = ({ productType = "lvf" }) => {
           font-size: 16px;
           font-family: 'Syne', sans-serif;
           border-bottom: 1px solid #C4C6C7;
-          width: 416px;
+          width: 400px;
           margin-top: 10px;
         }
 
+      .composition-accesories-image{
+        background-color:white;
+        height: 180px;
+        width: 180px;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+      }
+        
         .composition-accessories {
           display: flex;
           justify-content: center;
-          gap: 20px;
+          gap: 4rem;
         }
 
         .composition {
@@ -243,8 +331,6 @@ const Accesories = ({ productType = "lvf" }) => {
           display: flex;
           justify-content: center;
           align-items: center;
-          border-radius: 21px;
-          border: 1px solid #FFFFFF;
           width: 10.289rem;
           height: 2.616rem;
         }
@@ -253,11 +339,51 @@ const Accesories = ({ productType = "lvf" }) => {
           font-size: 1rem;
         }
 
-        .composition-image {
-          width: 100%;
-          max-width: 10.289rem;
-          margin-top: 10px;
+        .principal-division{
+        width: 344px;
+        height: 42px;
+        border-radius: 20px;
+        border: 1px solid;
+        background-color:rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         }
+        .principal-text-tecnical{
+        display: flex;
+        justify-content: center;
+        }
+
+        .divisions{
+        width: 165px;
+        height: 42px;
+        border-radius: 20px;
+        border: 1px solid;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+
+
+        .divisions h4{
+        font-size: 16px;
+        }
+
+        .second-text-tecnical{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        }
+        .principal-text-tecnical h4{
+        font-size: 16px;
+        
+        }
+
+
       `}</style>
     </section>
   );
