@@ -6594,6 +6594,7 @@ header.simple-header .path a:after {
 .tab-content .pills-wrapper {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 

@@ -67,14 +67,15 @@
     "name": "Wall Panels",
     "image": "arch/img/products/groberfloors-product-wall-panels.svg",
     "description": [
-      "Our product has the following warranty: WPC PANELS 5 years warranty.", "This guarantee covers the longevity of the product against structure deformations in it and/or composition that could significantly modify its appearance or its functionality.", "The warranty will exclusively cover the replacement of our material and the cost of replancing them on site. The warranty only covers the value of the product and doesn’t cover labor or other costs for remove of install products.", "For all purposes, the warranty terms will be considered from the date of the invoice."
+      "Our product has the following warranty: WPC PANELS 5 years warranty.", 
+      "This guarantee covers the longevity of the product against structure deformations in it and/or composition that could significantly modify its appearance or its functionality.", 
+      "The warranty will exclusively cover the replacement of our material and the cost of replancing them on site. The warranty only covers the value of the product and doesn’t cover labor or other costs for remove of install products.",
+      "For all purposes, the warranty terms will be considered from the date of the invoice."
     ],
     "benefits": [
-      "100% Waterproof",
-      "Highly durable",
-      "Eco-friendly",
-      "Easy to maintain",
-      "Easy to install"
+      "The responsibility during the transport of the material will be considered on behalf of the buyer or client, unless expressly indicated in the invoice that this service has been contracted.", 
+      "If it’s necessary to activate the transport insurance, the guarantee will be understood to have expired with the acceptance of the buyer, either through his signature or after 3 days from receipt.", 
+      "This as long as, at the time of receipt of the product, its acceptance with reservations is stated in writing in the transporter document, because it considers the existence of some hidden damage or that could not be verified within this period for the corresponding claim of transport insurance."
     ],
     "installation": {
       "text": [
