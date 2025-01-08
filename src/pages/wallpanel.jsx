@@ -9,10 +9,7 @@ import Hero from "../components/Architecture/Hero";
 import Products from "../components/Architecture/Products";
 import Colors from "../components/Architecture/Colors";
 import Accesories from "../components/Architecture/Accesories";
-import Baseboards from "../components/Architecture/Baseboards";
-import Highlight from "../components/Architecture/Highlight";
 import Contact from "../components/Architecture/Contact";
-import Footer from "../components/Footers/ArchitectureFooter";
 import Navbar from "../data/architecture/navbar.json";
 
 const HomeArchitecture = () => {

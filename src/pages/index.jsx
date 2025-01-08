@@ -5,11 +5,7 @@ import Head from "next/head";
 import AppLayout from "../layouts/app-layout";
 //= Components
 import Swiper from "../components/Architecture/Swiper";
-import Hero from "../components/Architecture/Hero";
 import ProductsPreview from "../components/Architecture/Products/preview";
-import Colors from "../components/Architecture/Colors";
-import Accesories from "../components/Architecture/Accesories";
-import Baseboards from "../components/Architecture/Baseboards";
 import Highlight from "../components/Architecture/Highlight";
 import Contact from "../components/Architecture/Contact";
 import Footer from "../components/Footers/ArchitectureFooter";

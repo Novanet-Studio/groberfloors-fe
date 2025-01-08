@@ -16,12 +16,12 @@ const Products = ({ productType = 'lvf' }) => {
   }
 
   // Títulos dinámicos para las pestañas
-  const tabs = productType === 'wp' 
+  const tabs = productType === 'wp'
     ? ['Warranty', 'Transport', 'Warranty Annulment']
     : ['Description', 'Benefits', 'Installation'];
 
   return (
-    <section className="products section-padding" data-scroll-index="2">
+    <section className="products section-padding" data-scroll-index="none">
       <div className="container">
         <div className="row">
           <div className="flex">
@@ -49,22 +49,48 @@ const Products = ({ productType = 'lvf' }) => {
             {/* Primera pestaña */}
             <TabPanel className="tab-content">
               <div className="pills-wrapper">
-              {
-                product.description.map((item, idx) => (
-                  <p className="pill" key={idx}>
-                    {item}
-                  </p>
-                ))
-              } 
+                 {productType === 'lvf' && product.description ? (
+                  product.description.map((item, idx) => (
+                    <p className="pill" key={idx}>
+                      {item}
+                    </p>
+                  ))
+                ) : null}
+
+                {productType === 'wp' && product.description && product.description.text ? (
+                  <div className="text">
+                    <ul className="list-disc pl-5 space-y-4">
+                      {product.description.text.map((item, idx) => (
+                        <li key={idx} className="text-white">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
               </div>
             </TabPanel>
 
             {/* Segunda pestaña */}
             <TabPanel className="tab-content">
               <div className="pills-wrapper">
-                {product.benefits.map((item, idx) => (
-                  <p className="pill" key={idx}>{item}</p>
-                ))}
+                {productType === 'lvf' && product.benefits ? (
+                  product.benefits.map((item, idx) => (
+                    <p className="pill" key={idx}>{item}</p>
+                  ))
+                ) : null}
+
+                {productType === 'wp' && product.benefits && product.benefits.text ? (
+                  <div className="text">
+                    <ul className="list-disc pl-5 space-y-4">
+                      {product.benefits.text.map((item, idx) => (
+                        <li key={idx} className="text-white">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
               </div>
             </TabPanel>
 
