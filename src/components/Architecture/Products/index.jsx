@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { Tab, TabList, TabPanel } from 'react-tabs';
-
 import products from "../../../data/architecture/products.json";
 import 'react-tabs/style/react-tabs.css';
 

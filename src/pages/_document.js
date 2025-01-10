@@ -23,15 +23,6 @@ class MyDocument extends Document {
           />
           <meta name="author" content="@groberfloors" />
           <link rel="shortcut icon" href="/img/favicon.png" />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/plugins/fontawesome-all.min.css"
-          ></link>
         </Head>
 
         <body>

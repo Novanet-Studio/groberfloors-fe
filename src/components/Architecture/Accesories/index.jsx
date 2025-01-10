@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Image from 'next/image'
+import Image from 'next/image';
 import accesoriesData from "../../../data/architecture/accesories.json";
-
 
 const Accesories = ({ productType = "lvf" }) => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -92,7 +91,7 @@ const Accesories = ({ productType = "lvf" }) => {
                       <h4 className="text-composition">{selectedItem.composition}</h4>
                     </div>
                     <div className="composition-accesories-image">
-                      <Image src={selectedItem.compositionImage} width={150} height={150} />
+                      <Image src={selectedItem.compositionImage} width={150} height={150} alt={selectedItem.name} />
                     </div>
                   </div>
 
@@ -102,7 +101,7 @@ const Accesories = ({ productType = "lvf" }) => {
                     </div>
                     {selectedItem.accesoriesImage && (
                       <div className="composition-accesories-image">
-                        <Image className="responsive-image" src={selectedItem.accesoriesImage} width={180} height={195} />
+                        <Image className="responsive-image" src={selectedItem.accesoriesImage} width={180} height={195} alt={selectedItem.name} />
                       </div>
                     )}
                   </div>
@@ -150,10 +149,6 @@ const Accesories = ({ productType = "lvf" }) => {
           </div>
         </div>
       )}
-      
-      {/* <style jsx> {`
-
-      `}</style> */}
     </section>
   );
 };
