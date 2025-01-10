@@ -41,6 +41,7 @@
         |- blog
         |- contact-form
         |- footers
+        |- Modal
 
     |--- BASE
 
@@ -4097,6 +4098,7 @@ img.left {
 
 .navbar .logo {
   width: 120px;
+  cursor: pointer;
 }
 
 .navbar .search-area {
@@ -6535,6 +6537,7 @@ header.simple-header .path a:after {
   color: #C4C6C7 !important; /* Color gris claro con mayor especificidad */
 }
 
+
 .text ul li::before {
   content: '•'; /* Añade el símbolo de la viñeta */
   color: #ff0000; /* Color rojo para la viñeta */
@@ -6589,6 +6592,10 @@ header.simple-header .path a:after {
 .tab-content .text {
   width: 100%;
   padding-bottom: 2em;
+}
+
+@media screen {
+  
 }
 
 .tab-content .pills-wrapper {
@@ -6654,7 +6661,7 @@ header.simple-header .path a:after {
 .accesories .item .image-wrapper .image:after {
   content: "";
   position: absolute;
-
+  cursor: pointer;
   top: -15px;
   left: -15px;
   right: -15px;
@@ -6662,6 +6669,9 @@ header.simple-header .path a:after {
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 175px;
 }
+
+
+
 
 /* ====================== [ End Accesories ] ====================== */
 
@@ -10626,6 +10636,7 @@ body.index-main .bg-gray {
     background-position: center !important;
   }
 
+
   .md-mb10 {
     margin-bottom: 10px;
   }
@@ -11312,6 +11323,12 @@ body.index-main .bg-gray {
 }
 
 @media screen and (max-width: 767px) {
+
+
+  .products main-image image-wrapper {
+    border-radius: 20px;
+  }
+
   .sm-mb10 {
     margin-bottom: 10px;
   }
@@ -11569,6 +11586,36 @@ body.index-main .bg-gray {
   .hero-cir .th-cir {
     width: auto;
     height: auto;
+  }
+
+  .container-preview {
+    gap: 1rem;
+  }
+
+
+  .n-title-h3{
+    font-size: 15px;
+  }
+
+  .w-title-h3{
+    font-size: 15px;
+  }
+  .m-title-valign{
+    width: 50%;
+  }
+
+  .products .image-wrapper {
+    border-radius: 20px;
+  }
+
+  .text ul li {
+    font-size: 1rem; /* Tamaño del texto ajustado para teléfonos */
+    line-height: 20px; /* Altura de línea ajustada para teléfonos */
+    margin-bottom: 16px; /* Espaciado ajustado entre los puntos de la lista */
+  }
+
+  .tab-content .text{
+    font-size: 1rem;
   }
 
   .hero-cir .th-cir:before {
