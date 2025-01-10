@@ -6523,7 +6523,6 @@ header.simple-header .path a:after {
 }
 
 
-
 .text ul {
   list-style-type: none; /* Elimina viñetas predeterminadas */
   padding-left: 20px; /* Espaciado desde el margen izquierdo */
@@ -6532,7 +6531,7 @@ header.simple-header .path a:after {
 .text ul li {
   position: relative; /* Permite usar pseudo-elementos como ::before */
   margin-bottom: 16px; /* Espaciado entre los puntos de la lista */
-  font-size: 28px; /* Tamaño del texto */
+  font-size: 20px; /* Tamaño del texto */
   line-height: 40px; /* Altura de línea */
   color: #C4C6C7 !important; /* Color gris claro con mayor especificidad */
 }
@@ -6545,9 +6544,6 @@ header.simple-header .path a:after {
   left: -20px; /* Espaciado desde el margen izquierdo */
   font-size: 28px; /* Asegura que la viñeta sea del mismo tamaño que el texto */
 }
-
-
-
 
 
 .container-principal{
@@ -6572,7 +6568,7 @@ header.simple-header .path a:after {
 }
 
 .react-tabs__tab {
-  font-size: 1.2em;
+  font-size: 1.4rem;
   color: white !important;
 }
 
@@ -11610,13 +11606,21 @@ body.index-main .bg-gray {
 
   .text ul li {
     font-size: 1rem; /* Tamaño del texto ajustado para teléfonos */
-    line-height: 20px; /* Altura de línea ajustada para teléfonos */
-    margin-bottom: 16px; /* Espaciado ajustado entre los puntos de la lista */
+    line-height: 22px; /* Altura de línea ajustada para teléfonos */
+    margin-bottom: 16px;
+    font-size: 0.7rem; /* Espaciado ajustado entre los puntos de la lista */
   }
 
-  .tab-content .text{
-    font-size: 1rem;
+
+  .react-tabs__tab-panel--selected {
+    padding: 1.5em;
+}
+
+  
+  .react-tabs__tab {
+    font-size: 0.8rem;
   }
+
 
   .hero-cir .th-cir:before {
     top: 50%;
