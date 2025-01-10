@@ -1,6 +1,12 @@
 import heroData from "../../../data/architecture/hero.json";
 
-const Hero = () => {
+const Hero = ({ productType = "lvf" }) => {
+  const hero = heroData[productType]; // Obtén los datos del producto según el tipo
+
+  if (!hero) {
+    return <p>Hero information not available for this product.</p>; // Validación
+  }
+
   return (
     <section className="hero-cr section-padding" data-scroll-index="1">
       <div className="container">
@@ -10,8 +16,7 @@ const Hero = () => {
               <div
                 className="img bg-img"
                 style={{
-                  backgroundImage:
-                    "url('arch/img/grobefloors-lvf-floor-installation.webp')",
+                  backgroundImage: `url('${hero.image}')`,
                   backgroundPosition: "center",
                 }}
               ></div>
@@ -46,7 +51,7 @@ const Hero = () => {
                 </svg>
               </div>
               <div className="rotate-exp">
-                <h2 className="red-grober-color lh-base">{heroData.percentage}</h2>
+                <h2 className="red-grober-color lh-base">{hero.percentage}</h2>
                 <h6>
                   quality <br /> products
                 </h6>
@@ -58,10 +63,10 @@ const Hero = () => {
               <h6 className="fz-12 text-u ls4 red-grober-color mb-10">
                 About our product
               </h6>
-              <h3 className="mb-30">{heroData.text}</h3>
-              <p className="mb-10">{heroData.text2}</p>
-              <p className="mb-10">{heroData.text3}</p>
-              <p>{heroData.text4}</p>
+              <h3 className="mb-30">{hero.text}</h3>
+              <p className="mb-10">{hero.text2}</p>
+              <p className="mb-10">{hero.text3}</p>
+              <p>{hero.text4}</p>
             </div>
           </div>
         </div>
@@ -71,3 +76,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

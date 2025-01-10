@@ -4,6 +4,7 @@ import Script from "next/script";
 import Head from "next/head";
 import ProgressScroll from "../components/Progress-Scroll";
 import "../styles/globals.css";
+import '../../public/css/Modal/modal.css'; // Importa el archivo CSS global
 import initGA from "../common/google-analytics";
 
 function MyApp({ Component, pageProps }) {

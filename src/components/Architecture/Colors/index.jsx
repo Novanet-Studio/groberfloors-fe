@@ -1,22 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import portfolios from "../../../data/architecture/colors.json";
+import colorsData from "../../../data/architecture/colors.json"; // Asegúrate de que la ruta sea correcta
 
-const Portfolio = () => {
-
+const Portfolio = ({ productType = "lvf" }) => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
+  const colors = colorsData[productType]; // Obtén los colores según el tipo de producto
+
+  if (!colors) {
+    return <p>No colors available for this product type.</p>;
+  }
+
+  const titles = {
+    lvf: "Colors",
+    wp: "WPC colors",
+    default: "Colors"
+  };
+
+  // Selecciona el título correspondiente o usa el valor por defecto
+  const title = titles[productType] || titles.default;
+
   return (
-    <section
-      className="work-crsol-clum section-padding pt-50"
-    >
+    <section className="work-crsol-clum section-padding pt-50">
       <div className="container">
         <div className="sec-head mb-50">
           <div className="flex">
             <div className="m-title valign">
-              <h3>Luxury Vinyl Floors Colors</h3>
+            <h3>{title}</h3>
             </div>
           </div>
         </div>
@@ -65,14 +77,14 @@ const Portfolio = () => {
             });
           }}
         >
-          {portfolios.map((portfolio, idx) => (
+          {colors.map((color, idx) => (
             <SwiperSlide key={idx}>
               <div className="item">
                 <div className="img">
-                  <img src={portfolio.image} alt="" />
+                  <img src={`/${color.image}`} alt={color.title} />
                 </div>
                 <div className="cont text-center mt-40">
-                  <p className="mt-5">{portfolio.title}</p>
+                  <p className="mt-5">{color.title}</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -83,21 +95,18 @@ const Portfolio = () => {
               <div
                 className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
                 ref={navigationNextRef}
-              >
-              </div>
+              ></div>
               <div
                 className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
                 ref={navigationPrevRef}
-              >
-              </div>
+              ></div>
             </div>
           </div>
         </Swiper>
-
-
       </div>
     </section>
   );
 };
 
 export default Portfolio;
+

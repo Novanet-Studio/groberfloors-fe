@@ -41,6 +41,7 @@
         |- blog
         |- contact-form
         |- footers
+        |- Modal
 
     |--- BASE
 
@@ -4097,6 +4098,7 @@ img.left {
 
 .navbar .logo {
   width: 120px;
+  cursor: pointer;
 }
 
 .navbar .search-area {
@@ -6515,6 +6517,50 @@ header.simple-header .path a:after {
   box-sizing: border-box;
 }
 
+.products .preview > div {
+  flex-wrap: nowrap;
+ 
+}
+
+
+.text ul {
+  list-style-type: none; /* Elimina viñetas predeterminadas */
+  padding-left: 20px; /* Espaciado desde el margen izquierdo */
+}
+
+.text ul li {
+  position: relative; /* Permite usar pseudo-elementos como ::before */
+  margin-bottom: 16px; /* Espaciado entre los puntos de la lista */
+  font-size: 20px; /* Tamaño del texto */
+  line-height: 40px; /* Altura de línea */
+  color: #C4C6C7 !important; /* Color gris claro con mayor especificidad */
+}
+
+
+.text ul li::before {
+  content: '•'; /* Añade el símbolo de la viñeta */
+  color: #ff0000; /* Color rojo para la viñeta */
+  position: absolute; /* Alinea la viñeta a la izquierda del texto */
+  left: -20px; /* Espaciado desde el margen izquierdo */
+  font-size: 28px; /* Asegura que la viñeta sea del mismo tamaño que el texto */
+}
+
+
+.container-principal{
+  max-width: 100%;
+}
+
+.container-title{
+  display: flex;
+  gap: 23rem;
+}
+
+.container-preview{
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem
+}
+
 .main-image {
   border-radius: 2em;
   margin-bottom: 4em;
@@ -6522,7 +6568,7 @@ header.simple-header .path a:after {
 }
 
 .react-tabs__tab {
-  font-size: 1.2em;
+  font-size: 1.3rem;
   color: white !important;
 }
 
@@ -6544,9 +6590,14 @@ header.simple-header .path a:after {
   padding-bottom: 2em;
 }
 
+@media screen {
+  
+}
+
 .tab-content .pills-wrapper {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -6606,7 +6657,7 @@ header.simple-header .path a:after {
 .accesories .item .image-wrapper .image:after {
   content: "";
   position: absolute;
-
+  cursor: pointer;
   top: -15px;
   left: -15px;
   right: -15px;
@@ -6614,6 +6665,9 @@ header.simple-header .path a:after {
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 175px;
 }
+
+
+
 
 /* ====================== [ End Accesories ] ====================== */
 
@@ -10578,6 +10632,7 @@ body.index-main .bg-gray {
     background-position: center !important;
   }
 
+
   .md-mb10 {
     margin-bottom: 10px;
   }
@@ -11264,6 +11319,12 @@ body.index-main .bg-gray {
 }
 
 @media screen and (max-width: 767px) {
+
+
+  .products main-image image-wrapper {
+    border-radius: 20px;
+  }
+
   .sm-mb10 {
     margin-bottom: 10px;
   }
@@ -11522,6 +11583,44 @@ body.index-main .bg-gray {
     width: auto;
     height: auto;
   }
+
+  .container-preview {
+    gap: 1rem;
+  }
+
+
+  .n-title-h3{
+    font-size: 15px;
+  }
+
+  .w-title-h3{
+    font-size: 15px;
+  }
+  .m-title-valign{
+    width: 50%;
+  }
+
+  .products .image-wrapper {
+    border-radius: 20px;
+  }
+
+  .text ul li {
+    font-size: 1rem; /* Tamaño del texto ajustado para teléfonos */
+    line-height: 22px; /* Altura de línea ajustada para teléfonos */
+    margin-bottom: 16px;
+    font-size: 0.7rem; /* Espaciado ajustado entre los puntos de la lista */
+  }
+
+
+  .react-tabs__tab-panel--selected {
+    padding: 1.5em;
+}
+
+  
+  .react-tabs__tab {
+    font-size: 0.8rem;
+  }
+
 
   .hero-cir .th-cir:before {
     top: 50%;

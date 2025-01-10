@@ -1,17 +1,20 @@
 import { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Parallax } from "swiper";
-import slides from "../../../data/architecture/header.json";
+import slides from "../../../data/architecture/swiper.json";
 
 import "swiper/css/navigation";
 
 SwiperCore.use([Navigation, Parallax]);
 
-const Header = () => {
+const Header = ({ productType = "lvf" }) => {
   const [load, setLoad] = useState(true);
 
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
+
+  // Selecciona los datos correspondientes del JSON
+  const selectedSlides = slides[productType] || [];
 
   useEffect(() => {
     setTimeout(() => {
@@ -56,7 +59,7 @@ const Header = () => {
             });
           }}
         >
-          {slides.map((slide, idx) => (
+          {selectedSlides.map((slide, idx) => (
             <SwiperSlide key={idx}>
               <div
                 className="bg-img valign"
@@ -110,3 +113,4 @@ const Header = () => {
 };
 
 export default Header;
+

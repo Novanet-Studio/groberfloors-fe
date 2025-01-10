@@ -1,0 +1,372 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #23262D;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: auto;
+  height: 90vh;
+  max-width: 90%;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-description {
+  font-size: 16px !important;
+  padding: 1rem;
+
+}
+
+.modal-image {
+  display: flex;
+  align-items: center;
+}
+
+.modal-image img {
+  width: auto;
+  height: 70vh;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: red;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+  /* Ensure the close button is always on top */
+}
+
+.modal-body {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+}
+
+.modal-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+
+.modal-center {
+  flex: 1;
+  gap: 20px;
+  width: 40%;
+  display: flex;
+}
+
+.container-technical {
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.modal-right {
+  width: 30%;
+  padding-top: 38px;
+}
+
+.modal-info-content {
+  background-color: #1F2229;
+  padding: 1rem;
+  width: fit-content;
+  height: auto;
+}
+
+.modal-header {
+  display: flex;
+  border-bottom: 0px;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.modal-number {
+  background: #E31738;
+  color: #23262D;
+  font-size: 35px;
+  width: 40px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-size {
+  display: flex;
+  justify-content: left;
+  width: 100%
+}
+
+.modal-size-content {
+  background-color: #1F2229;
+  padding: 1rem;
+  width: fit-content;
+  height: auto;
+}
+
+.text-size {
+  font-size: 24px;
+  color: #E31738;
+}
+
+.modal-size ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-size li {
+  font-size: 16px;
+  font-family: 'Syne', sans-serif;
+  border-bottom: 1px solid #C4C6C7;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.composition-accesories-image {
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.composition-accessories {
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+}
+
+.composition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-composition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.289rem;
+  height: 2.616rem;
+}
+
+.text-composition {
+  font-size: 1rem;
+}
+
+.principal-division {
+  width: 344px;
+  height: 42px;
+  border-radius: 20px;
+  border: 1px solid;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal-text-tecnical {
+  display: flex;
+  justify-content: left;
+}
+
+.divisions {
+  width: 165px;
+  height: 42px;
+  border-radius: 20px;
+  border: 1px solid;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divisions h4 {
+  font-size: 16px;
+}
+
+.second-text-tecnical {
+  display: flex;
+  justify-content: left;
+  gap: 0.50rem;
+  padding-top: 0.50rem;
+
+}
+
+.principal-text-tecnical h4 {
+  font-size: 16px;
+}
+
+/* ------------ TABLET ---------------- */
+@media (max-width: 1024px) {
+
+  .close {
+      top: 30px;
+      right: 30px;
+  }
+
+  .modal-content {
+      padding: 10px;
+      height: auto;
+      max-height: 90vh;
+      overflow-y: auto;
+      /* Enable scrolling */
+  }
+
+  .modal-body {
+      flex-direction: column;
+      padding: 50px;
+      gap: 20px;
+  }
+
+  .modal-left,
+  .modal-center,
+  .modal-right {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+
+  }
+
+  .modal-center {
+      padding-top: 80px;
+  }
+
+  .modal-description {
+      font-size: 22px;
+  }
+
+
+
+  .modal-size-content {
+      width: 100%;
+      height: auto;
+  }
+
+  .modal-size li {
+      width: 100%;
+  }
+
+
+  .text-composition {
+      font-size: 22px;
+  }
+}
+
+/* ----------- TELEFONO ------------- */
+@media (max-width: 480px) {
+  .modal-content {
+      padding: 20px;
+      height: auto;
+      max-height: 90vh;
+      overflow-y: auto;
+      /* Enable scrolling */
+  }
+
+  .modal-body {
+      padding: 0px;
+      gap: 0px;
+  }
+
+  .modal-header h2 {
+      font-size: 20px;
+  }
+
+  .modal-description {
+      font-size: 14px !important;
+      line-height: 14px !important;
+  }
+
+  .modal-size li {
+      font-size: 12px;
+  }
+
+  .modal-size-content {
+      width: 100%;
+      height: 50%;
+  }
+
+  .text-size {
+      font-size: 18px;
+  }
+
+  .modal-number {
+      font-size: 24px;
+      width: 30px;
+      height: 40px;
+  }
+
+  .modal-left {
+      gap: 0px
+  }
+
+  .modal-info-content {
+      width: fit-content;
+      height: auto;
+  }
+
+  .composition-accesories-image {
+      width: 90px;
+      height: 90px;
+  }
+
+  .composition-accessories {
+      display: flex;
+      justify-content: left;
+      gap: 0.5rem;
+  }
+
+  .principal-division {
+      width: 250px;
+      height: 30px;
+  }
+
+  .divisions {
+      width: 120px;
+      height: 30px;
+  }
+
+  .principal-division h4 {
+      font-size: 12px;
+  }
+
+
+
+  .divisions h4 {
+      font-size: 12px;
+
+  }
+
+  .composition {
+      width: 30%;
+  }
+
+  .text-composition {
+      font-size: 12px;
+  }
+}

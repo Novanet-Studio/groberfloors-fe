@@ -5,11 +5,14 @@ import Head from "next/head";
 import AppLayout from "../layouts/app-layout";
 //= Components
 import Swiper from "../components/Architecture/Swiper";
-import ProductsPreview from "../components/Architecture/Products/preview";
-import Highlight from "../components/Architecture/Highlight";
+import Hero from "../components/Architecture/Hero";
+import Products from "../components/Architecture/Products";
+import Colors from "../components/Architecture/Colors";
+import Baseboards from "../components/Architecture/Baseboards";
 import Contact from "../components/Architecture/Contact";
-import Footer from "../components/Footers/ArchitectureFooter";
 import Navbar from "../data/architecture/navbar.json";
+import AccesoriesPreview from "../components/Architecture/Accesories/preview";
+
 
 const HomeArchitecture = () => {
   useEffect(() => {
@@ -17,7 +20,7 @@ const HomeArchitecture = () => {
   }, []);
 
 
-
+  
   return (
     <>
       <Head>
@@ -25,19 +28,20 @@ const HomeArchitecture = () => {
       </Head>
 
       <AppLayout type="architecture" links={Navbar}>
-        <Swiper productType="main" />
+        <Swiper />
         <main className="position-re">
           <div
             className="bg-pattern bg-img"
             style={{ backgroundImage: "url('arch/img/pattern-bg.svg')" }}
           ></div>
-          <ProductsPreview />
-          <Highlight />
-          <Contact />
-     
-          <Footer />
+          <Hero productType="lvf"/>
+          <Products productType="lvf" />
+          <Colors productType="lvf" />
+          <AccesoriesPreview productType="lvf" />
+          <Baseboards productType="lvf"  />
         </main>
       </AppLayout>
+      <Contact />
     </>
   );
 };

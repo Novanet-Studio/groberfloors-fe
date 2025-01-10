@@ -1,30 +1,200 @@
-[
-  {
-    "name": "Double Round",
-    "image": "arch/img/products/accesories/groberfloors-accesories-double-round.webp"
-  },
-  {
-    "name": "L Moldign Square",
-    "image": "arch/img/products/accesories/groberfloors-accesories-l-molding-square.webp"
-  },
-  {
-    "name": "L Round",
-    "image": "arch/img/products/accesories/groberfloors-accesories-l-round.webp"
-  },
-  {
-    "name": "Reducer Oversize",
-    "image": "arch/img/products/accesories/groberfloors-accesories-reducer-oversize.webp"
-  },
-  {
-    "name": "Round Step",
-    "image": "arch/img/products/accesories/groberfloors-accesories-round-step.webp"
-  },
-  {
-    "name": "Square Step",
-    "image": "arch/img/products/accesories/groberfloors-accesories-square-step.webp"
-  },
-  {
-    "name": "T Molding",
-    "image": "arch/img/products/accesories/groberfloors-accesories-t-molding.webp"
-  }
-]
+{
+  "lvf": [
+    {
+      "name": "Double Round",
+      "image": "arch/img/products/accesories/groberfloors-accesories-double-round.webp",
+      "description": "Used for smooth floor transitions between areas of the same height.",
+      "details": {
+        "material": "PVC",
+        "weight": "0.5kg",
+        "dimensions": "2m x 5cm x 2cm"
+      }
+    },
+    {
+      "name": "L Molding Square",
+      "image": "arch/img/products/accesories/groberfloors-accesories-l-molding-square.webp",
+      "description": "Perfect for edge finishes and transitions between different floor heights.",
+      "details": {
+        "material": "Aluminum",
+        "weight": "0.8kg",
+        "dimensions": "2m x 3cm x 3cm"
+      }
+    },
+    {
+      "name": "L Round",
+      "image": "arch/img/products/accesories/groberfloors-accesories-l-round.webp",
+      "description": "Ideal for rounded corners and transitions between curved surfaces.",
+      "details": {
+        "material": "Plastic",
+        "weight": "0.6kg",
+        "dimensions": "1.5m x 4cm x 2cm"
+      }
+    },
+    {
+      "name": "Reducer Oversize",
+      "image": "arch/img/products/accesories/groberfloors-accesories-reducer-oversize.webp",
+      "description": "Perfect for transitioning between floors of different heights.",
+      "details": {
+        "material": "Wood",
+        "weight": "1.2kg",
+        "dimensions": "2.5m x 5cm x 1cm"
+      }
+    },
+    {
+      "name": "Round Step",
+      "image": "arch/img/products/accesories/groberfloors-accesories-round-step.webp",
+      "description": "Designed for creating rounded stair edges.",
+      "details": {
+        "material": "Vinyl",
+        "weight": "0.9kg",
+        "dimensions": "2m x 6cm x 2cm"
+      }
+    },
+    {
+      "name": "Square Step",
+      "image": "arch/img/products/accesories/groberfloors-accesories-square-step.webp",
+      "description": "Best for square stair edges and clean finishes.",
+      "details": {
+        "material": "Aluminum",
+        "weight": "1.1kg",
+        "dimensions": "2m x 5cm x 2cm"
+      }
+    },
+    {
+      "name": "T Molding",
+      "image": "arch/img/products/accesories/groberfloors-accesories-t-molding.webp",
+      "description": "Used for even transitions between two floor types.",
+      "details": {
+        "material": "PVC",
+        "weight": "0.7kg",
+        "dimensions": "2m x 4cm x 2cm"
+      }
+    }
+  ],
+  "wp": [
+    {
+      "name": "Liston",
+      "number": "01",
+      "composition": "Composition",
+      "image": "/arch/img/products/accesories/groberfloors-classification-liston.webp",
+      "infoImage": "/arch/img/products/accesories/info-liston.svg",
+      "compositionImage": "/arch/img/products/accesories/liston-composition.svg",
+      "description": "You can use the LISTON reference in your walls or in skies, giving it a touch warm and unique to your spaces.",
+      "details": {
+        "long": " 114 in (9,5 ft)",
+        "width": "1,92 in (0,16 ft)",
+        "depth": "2,28 in (0,19 ft) ",
+        "finish": "Textured",
+        "weight": "13 Lb/ unit",
+        "composition": "Encapsulated WPC"
+      },
+      "technicalData": {
+        "applications": "applications in outdoor spaces",
+        "interiorDesign": "interior design",
+        "divisions": "Divisions",
+        "pergolas": "pergolas"
+      }
+    },
+    {
+      "name": "Patio",
+      "number": "02",
+      "composition": "Composition",
+      "accesories": "Accesories",
+      "image": "/arch/img/products/accesories/groberfloors-classification-patio.webp",
+      "infoImage": "/arch/img/products/accesories/info-patio.svg",
+      "compositionImage": "/arch/img/products/accesories/liston-composition.svg",
+      "accesoriesImage": "/arch/img/products/accesories/patio-accesories.svg",
+      "description": "Our PATIO not only has a texture of real  wood, but also has a life longer lifespan than real wood and does not require no maintenance. Our panels have resistance to high pressure, weather resistance, resistance to scratch, waterproof and flame retardant, the WPC composite decking has a long lifespan compared to others coatings.",
+      "details": {
+        "long": " 144 in (12 ft) ",
+        "width": "8,4 in (0,7 ft) ",
+        "depth": " 0,96 (0,08 ft)",
+        "finish": "Ribbed",
+        "weight": "4lb /unit",
+        "composition": "Encapsulated WPC"
+      },
+      "technicalData": {
+        "applications": "Aplications on interior spaces",
+        "interiorDesign": "Interiorism",
+        "divisions": "Coating",
+        "pergolas": "Ceilings"
+      }
+    },
+    {
+      "name": "Plane",
+      "number": "03",
+      "composition": "Composition",
+      "image": "/arch/img/products/accesories/groberfloors-classification-plane.webp",
+      "infoImage": "/arch/img/products/accesories/info-plane.svg",
+      "compositionImage": "/arch/img/products/accesories/liston-composition.svg",
+      "description": "WPC panels have a natural wood appearance durable, environmentally friendly and do not need any maintenance, or ongoing expenses that requires a lot of time and do not need any maintenance, or ongoing expenses.",
+      "details": {
+        "long": "15,7 in (1,3 ft)",
+        "width": "114 in (9,5 ft) ",
+        "depth": "0,4 in (0.03 ft) ",
+        "finish": " Smooth ",
+        "weight": " 12 Lb/ unit",
+        "composition": "Encapsulated WPC"
+      },
+      "technicalData": {
+        "applications": "Indoor and outdoor applications",
+        "interiorDesign": "Facades",
+        "divisions": "Coating",
+        "pergolas": "Interiors",
+        "ceiling": "Ceilings"
+      }
+    },
+    {
+      "name": "Square",
+      "number": "04",
+      "composition": "Composition",
+      "accesories": "Accesories",
+      "image": "/arch/img/products/accesories/groberfloors-classification-square.webp",
+      "infoImage": "/arch/img/products/accesories/info-square.svg",
+      "compositionImage": "/arch/img/products/accesories/liston-composition.svg",
+      "accesoriesImage": "/arch/img/products/accesories/square-accesories.svg",
+      "description": "WPC panels have a natural wood appearance  durable, environmentally friendly environment  and do not need any maintenance, or ongoing  expenses that they require a lot of time.",
+      "details": {
+        "long": "114 in (9,5 ft) ",
+        "width": "6,24 in (0,52 ft) ",
+        "depth": "0,84 in (0,07 ft) ",
+        "finish": "Ribbed",
+        "weight": ": 12 Lb/ unit",
+        "composition": "Encapsulated WPC"
+      },
+      "technicalData": {
+        "applications": "Indoor and outdoor applications",
+        "interiorDesign": "Facades",
+        "divisions": "Coating",
+        "pergolas": "Interiors",
+        "ceiling": "Ceilings"
+      }
+    },
+    {
+      "name": "Flat",
+      "number": "05",
+    "composition": "Composition",
+      "accesories": "Accesories",
+      "image": "/arch/img/products/accesories/groberfloors-classification-flat.webp",
+      "infoImage": "/arch/img/products/accesories/info-flat.svg",
+      "compositionImage": "/arch/img/products/accesories/liston-composition.svg",
+      "accesoriesImage": "/arch/img/products/accesories/patio-accesories.svg",
+      "description": "Convert your spaces with incredible designs.",
+      "details": {
+        "long": " 114 in (9,5 ft) ",
+        "width": "9,6 in (0,8ft)",
+        "depth": ": 0,36 in (0,03 ft)",
+        "finish": "Corrugated",
+        "weight": " 6 Lb/unit",
+        "composition": " Encapsulated WPC"
+      },
+      "technicalData": {
+        "applications": "Aplications on interior spaces",
+        "interiorDesign": " Interiorism",
+        "divisions": "Coating",
+        "pergolas": "Ceilings"
+      }
+    }
+  ]
+}
+
