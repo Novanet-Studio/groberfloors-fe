@@ -16,25 +16,31 @@ const ProductsPreview = () => {
         </div>
 
         <div className="container-preview">
-          <div className="products main-image image-wrapper ">
-            <a className="preview" href="/vinyls">
-              <Image
-                className="image"
-                width="1160"
-                height="800"
-                src={`/${products.lvf.image}`}
-              />
-            </a>
+          <div className="products main-image image-wrapper">
+            <Link href="/vinyls">
+              <a className="preview">
+                <Image
+                  className="image"
+                  width="1160"
+                  height="800"
+                  src={`/${products.lvf.image}`}
+                  alt="Luxury Vinyl Floor"
+                />
+              </a>
+            </Link>
           </div>
-          <div className="products main-image image-wrapper ">
-            <a className="preview" href="/wallpanel">
-              <Image
-                className="image"
-                width="1160"
-                height="800"
-                src={`/${products.wp.image}`}
-              />
-            </a>
+          <div className="products main-image image-wrapper">
+            <Link href="/wallpanel">
+              <a className="preview">
+                <Image
+                  className="image"
+                  width="1160"
+                  height="800"
+                  src={`/${products.wp.image}`}
+                  alt="Wall Panels"
+                />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

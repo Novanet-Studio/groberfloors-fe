@@ -20,6 +20,15 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="/css/plugins/fontawesome-all.min.css"
+        />
       </Head>
 
       <Component {...pageProps} />
