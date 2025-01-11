@@ -10625,12 +10625,14 @@ body.index-main .bg-gray {
   background: #fafafb;
 }
 
+
 /* ====================== [ End Colors Skin  ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
   .bg-img {
     background-position: center !important;
   }
+
 
 
   .md-mb10 {
@@ -11318,6 +11320,7 @@ body.index-main .bg-gray {
   }
 }
 
+
 @media screen and (max-width: 767px) {
 
 
@@ -11582,6 +11585,11 @@ body.index-main .bg-gray {
   .hero-cir .th-cir {
     width: auto;
     height: auto;
+  }
+
+
+  .container-title{
+    gap: 1rem;
   }
 
   .container-preview {
