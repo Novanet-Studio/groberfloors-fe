@@ -10627,13 +10627,28 @@ body.index-main .bg-gray {
 
 
 /* ====================== [ End Colors Skin  ] ====================== */
+
 /* ====================== [ Start Responsive ] ====================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .n-title-h3 {
+      width: 70% !important; 
+  }
+
+  .m-title-valign {
+      width: 56% !important;
+  }
+
+  .container-title {
+      gap: 0px !important;
+  }
+}
+
+
 @media screen and (max-width: 991px) {
   .bg-img {
     background-position: center !important;
   }
-
-
 
   .md-mb10 {
     margin-bottom: 10px;
@@ -11319,6 +11334,7 @@ body.index-main .bg-gray {
     padding-bottom: 30px !important;
   }
 }
+
 
 
 @media screen and (max-width: 767px) {
