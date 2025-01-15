@@ -4,7 +4,7 @@ import blogs from '../../../data/architecture/blog.json';
 
 const Blog = () => {
   return (
-    <section className="blog section-padding" data-scroll-index="5">
+    <section className="blog section-padding" data-scroll-index="none">
       <div className="container">
         <div className="sec-head mb-100">
           <div className="flex">

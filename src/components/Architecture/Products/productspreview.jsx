@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ProductsPreview = () => {
   return (
-    <section className="products section-padding" data-scroll-index="1">
+    <section className="products section-padding" data-scroll-index="none">
       <div className="row">
         <div className="container-title">
           <div className="m-title-valign">
@@ -17,7 +17,7 @@ const ProductsPreview = () => {
 
         <div className="container-preview">
           <div className="products main-image image-wrapper">
-            <Link href="/vinyls">
+            <Link href="/luxuryvinylflooring">
               <a className="preview">
                 <Image
                   className="image"
@@ -30,7 +30,7 @@ const ProductsPreview = () => {
             </Link>
           </div>
           <div className="products main-image image-wrapper">
-            <Link href="/wallpanel">
+            <Link href="/wallpanels">
               <a className="preview">
                 <Image
                   className="image"

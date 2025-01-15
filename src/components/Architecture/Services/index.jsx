@@ -4,7 +4,7 @@ import services from '../../../data/architecture/services.json';
 
 const Services = () => {
   return (
-    <section className="services section-padding" data-scroll-index="2">
+    <section className="services section-padding" data-scroll-index="none">
       <div className="container">
         <div className="sec-head mb-100">
           <div className="flex">

@@ -25,7 +25,7 @@ const Header = ({ productType = "lvf" }) => {
   return (
     <header
       className="slider arch-slider slider-prlx mt-70"
-      data-scroll-index="0"
+      data-scroll-index="none"
     >
       {!load ? (
         <Swiper

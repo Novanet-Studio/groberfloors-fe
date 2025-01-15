@@ -8,7 +8,7 @@ const Hero = ({ productType = "lvf" }) => {
   }
 
   return (
-    <section className="hero-cr section-padding" data-scroll-index="1">
+    <section className="hero-cr section-padding" data-scroll-index="none">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">

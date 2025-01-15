@@ -5,7 +5,7 @@ import Head from "next/head";
 import AppLayout from "../layouts/app-layout";
 //= Components
 import Swiper from "../components/Architecture/Swiper";
-import ProductsPreview from "../components/Architecture/Products/preview";
+import ProductsPreview from "../components/Architecture/Products/productspreview";
 import Highlight from "../components/Architecture/Highlight";
 import Contact from "../components/Architecture/Contact";
 import Footer from "../components/Footers/ArchitectureFooter";
@@ -34,7 +34,6 @@ const HomeArchitecture = () => {
           <ProductsPreview />
           <Highlight />
           <Contact />
-     
           <Footer />
         </main>
       </AppLayout>
