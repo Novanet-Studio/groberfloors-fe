@@ -11603,6 +11603,7 @@ body.index-main .bg-gray {
   }
 
 
+
   .container-title{
     gap: 1rem;
   }
@@ -11614,14 +11615,18 @@ body.index-main .bg-gray {
 
   .n-title-h3{
     font-size: 15px;
+    margin-top: 50px;
   }
 
   .w-title-h3{
     font-size: 15px;
+    margin-top: 50px;
   }
   .m-title-valign{
     width: 50%;
+
   }
+
 
   .products .image-wrapper {
     border-radius: 20px;
