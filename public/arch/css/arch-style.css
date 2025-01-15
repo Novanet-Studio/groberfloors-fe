@@ -34,7 +34,7 @@ h5, h6 {
 }
 
 .section-padding {
-  padding-top: 4em;
+  padding-top: 4rem;
   padding-bottom: 0;
 }
 
@@ -285,9 +285,7 @@ h5, h6 {
   body.index-arch .nav-scroll .navbar-toggler {
     color: #fff !important;
   }
-  body.index-arch .section-padding {
-    padding: 50px 0;
-  }
+
   body.index-arch .sec-head .flex {
     display: block;
   }
@@ -859,6 +857,12 @@ h5, h6 {
     width: auto;
     height: auto;
   }
+
+  body.index-arch p{
+    font-size: 1rem;
+  }
+
+  
   .hero-cir .th-cir:before {
     top: 50%;
     -webkit-transform: translateY(-50%);

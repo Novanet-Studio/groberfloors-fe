@@ -10891,10 +10891,6 @@ body.index-main .bg-gray {
     color: #fff !important;
   }
 
-  body.index-arch .section-padding {
-    padding: 50px 0;
-  }
-
   body.index-arch .sec-head .flex {
     display: block;
   }
@@ -11215,6 +11211,7 @@ body.index-main .bg-gray {
     left: 50%;
     bottom: auto;
     top: -50px;
+    margin-top: 9%;
   }
 
   .numbers .container {
@@ -11647,6 +11644,19 @@ body.index-main .bg-gray {
   
   .react-tabs__tab {
     font-size: 0.8rem;
+  }
+
+  .tab-content .pill{
+    padding: 5px 20px;
+    font-size: 1rem;
+  }
+
+  .section-padding {
+    padding: none;
+  }
+
+  .products {
+    margin: 0px;
   }
 
 
