@@ -1,7 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import React from 'react';
 
 const Navbar = ({ links, navbarRef, theme, logoTheme, container }) => {
+  const router = useRouter();
+
+  const isActive = (href) => {
+    return router.pathname === href;
+  };
+
   const goToSection = (e, link) => {
     if (link == "#0") e.preventDefault();
     
@@ -39,7 +47,14 @@ const Navbar = ({ links, navbarRef, theme, logoTheme, container }) => {
             {
               links && links.length && links.map((link, idx) => (
                 <li className="nav-item" key={idx}>
-                  <a className="nav-link" href={link.href} data-scroll-nav={idx} onClick={e => goToSection(e, link.href)}>{ link.name }</a>
+                  <a
+                    className={`nav-link ${isActive(link.href) ? 'active' : ''}`}
+                    href={link.href}
+                    data-scroll-nav={idx}
+                    onClick={e => goToSection(e, link.href)}
+                  >
+                    {link.name}
+                  </a>
                 </li>
               ))
             }

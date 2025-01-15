@@ -3929,6 +3929,10 @@ img.left {
   margin: 10px 15px;
 }
 
+.navbar .navbar-nav .nav-link.active {
+  color: #e31738 !important; /* Cambia esto al color que prefieras */
+}
+
 .navbar.light .navbar-nav .nav-link {
   color: #fff;
 }
