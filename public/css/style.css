@@ -6628,6 +6628,17 @@ header.simple-header .path a:after {
   background: none !important;
 }
 
+.characteristics{
+  display: flex;
+  background-color: #1F2229;
+  width: 876px;
+  height: 438px;
+  border-radius: 24.1px;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+
 /* ====================== [ End Products ] ====================== */
 /* ====================== [ Start Accesories ] ====================== */
 .accesories {

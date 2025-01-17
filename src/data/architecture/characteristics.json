@@ -1,0 +1,83 @@
+{
+    "lvf": {
+      "name": "Luxury Vinyl (Waterproof)",
+      "image": "arch/img/products/luxury-vinyl-flooring-pages-products.svg",
+      "characteristics": [
+        {
+          "text": "Pet Friendly",
+          "image": "arch/img/products/characteristics/characteristics-pet-friendly.svg"
+        },
+        {
+          "text": "Stain Resistant",
+          "image": "arch/img/products/characteristics/characteristics-stain-resistant.svg"
+        },
+        {
+          "text": "Unilin Uniclick system",
+          "image": "arch/img/products/characteristics/characteristics-unilin-uniclick-system.svg"
+        },
+        {
+          "text": "Low VOC products",
+          "image": "arch/img/products/characteristics/characteristics-low-voc-products.svg"
+        },
+        {
+          "text": "Anti slip",
+          "image": "arch/img/products/characteristics/characteristics-anti-slip.svg"
+        },
+        {
+          "text": "Waterproof",
+          "image": "arch/img/products/characteristics/characteristics-waterproof.svg"
+        },
+        {
+          "text": "Years guarantee for commercial usage",
+          "image": "arch/img/products/characteristics/characteristics-years-guarantee-for-commercial-usage.svg"
+        },
+        {
+          "text": "Residential lifetime",
+          "image": "arch/img/products/characteristics/characteristics-residential-lifetime.svg"
+        }
+      ]
+    },
+    "wp": {
+      "name": "Wall Panels",
+      "image": "arch/img/products/wallpanels-pages-products.svg",
+      "characteristics": [
+        {
+          "text": "Eco-friendly",
+          "image": "arch/img/products/characteristics/characteristics-eco-friendly.svg"
+        },
+        {
+          "text": "Easy/fast installation",
+          "image": "arch/img/products/characteristics/characteristics-easy-fast-installation.svg"
+        },
+        {
+          "text": "Moisture resistant",
+          "image": "arch/img/products/characteristics/characteristics-moisture-resistant.svg"
+        },
+        {
+          "text": "Corrosion resistant",
+          "image": "arch/img/products/characteristics/characteristics-corrosion-resistant.svg"
+        },
+        {
+          "text": "Resist harsh enviroments",
+          "image": "arch/img/products/characteristics/characteristics-resist-harsh-environments.svg"
+        },
+        {
+          "text": "Pest resistant",
+          "image": "arch/img/products/characteristics/characteristics-pest-resistant.svg"
+        },
+        {
+          "text": "Flame retardant",
+          "image": "arch/img/products/characteristics/characteristics-flame-retardant.svg"
+        },
+        {
+          "text": "Can be painted",
+          "image": "arch/img/products/characteristics/characteristics-can-be-painted.svg"
+        },
+        {
+          "text": "Low maintenance",
+          "image": "arch/img/products/characteristics/characteristics-low-maintenance.svg"
+        }
+      ]
+      
+    }
+  }

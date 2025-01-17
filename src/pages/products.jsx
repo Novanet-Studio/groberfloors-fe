@@ -53,6 +53,7 @@ import Highlight from "../components/Architecture/Highlight";
 import Contact from "../components/Architecture/Contact";
 import Footer from "../components/Footers/ArchitectureFooter";
 import Navbar from "../data/architecture/navbar.json";
+import PagesProducts from "../components/Architecture/Products/pagesproducts";
 
 const HomeArchitecture = () => {
   useEffect(() => {
@@ -74,7 +75,7 @@ const HomeArchitecture = () => {
             style={{ backgroundImage: "url('/arch/img/pattern-bg.svg')" }}
           ></div>
           <div id="products-preview">
-            <ProductsPreview />
+            <PagesProducts/>
           </div>
         </main>
       </AppLayout>
