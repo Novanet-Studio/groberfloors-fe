@@ -6555,6 +6555,7 @@ header.simple-header .path a:after {
 .container-title{
   display: flex;
   gap: 23rem;
+  flex: 1;
 }
 
 .container-preview{
@@ -6628,15 +6629,58 @@ header.simple-header .path a:after {
   background: none !important;
 }
 
+.product-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding: 0 8px;
+}
+
 .characteristics{
   display: flex;
+  flex-direction: column;
   background-color: #1F2229;
-  width: 876px;
-  height: 438px;
   border-radius: 24.1px;
-  padding-top: 2rem;
-  padding-right: 1rem;
+  padding: 0.5rem;
   margin-top: 1rem;
+}
+
+.characteristic-img {
+  width: 32px;
+  margin-right: 10px;
+}
+
+.characteristics-list {
+  list-style-type: none;
+  padding: 0;
+  flex: 1;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 968px) {
+  .characteristics{
+    flex-direction: row;
+    gap: 24px;
+    font-size: 24px;
+    padding: 1rem 2rem;
+  }
+  .products-container {
+    gap: 4rem;
+  }
+
+  .characteristic-img {
+    width: 50px;
+  }
 }
 
 /* ====================== [ End Products ] ====================== */
@@ -10644,14 +10688,6 @@ body.index-main .bg-gray {
 /* ====================== [ Start Responsive ] ====================== */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .n-title-h3 {
-      width: 70% !important; 
-  }
-
-  .m-title-valign {
-      width: 56% !important;
-  }
-
   .container-title {
       gap: 0px !important;
   }
@@ -11633,11 +11669,6 @@ body.index-main .bg-gray {
     font-size: 15px;
     margin-top: 50px;
   }
-  .m-title-valign{
-    width: 50%;
-
-  }
-
 
   .products .image-wrapper {
     border-radius: 20px;
