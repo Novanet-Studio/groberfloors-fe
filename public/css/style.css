@@ -6667,7 +6667,7 @@ ul {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 1280px) {
   .characteristics{
     flex-direction: row;
     gap: 24px;
