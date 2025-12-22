@@ -1,0 +1,17 @@
+export const heroData = {
+  lvf: {
+    percentage: "100%",
+    text: "Luxury Vinyl Floors",
+    text2: "High-quality, durable, and stylish flooring solutions.",
+    text3: "Perfect for homes and commercial spaces.",
+    text4: "Waterproof, pet-friendly, and easy to install.",
+    image: "/images/grobefloors-lvf-floor-installation.webp",
+  },
+  wp: {
+    percentage: "100%",
+    text: "Wall panels Build what you dream",
+    text2:
+      "The WPC panel (Wood Plastic Composite) allows all this through a productiontechnique that requires a lot of less wood, which uses recycledmaterials, obtaining equally satisfactory results and even much more creatives",
+    image: "/images/grobefloors-wp-floor-installation.webp",
+  },
+};

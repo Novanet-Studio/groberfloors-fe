@@ -1,20 +1,286 @@
-.gallery-top .swiper-wrapper {
-  text-align: center;
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Syne";
+  src: url("../../public/fonts/syne/syne.ttf");
 }
 
-.work-carsouel.crv .work-crsol.swiper {
-  overflow: unset;
+@theme {
+  /*? ===== COLORS */
+  --color-white: #fff;
+  --color-dark: #fff;
+
+  --color-base-light: #8e8e99;
+  --color-base: #18191d;
+  --color-base-alt: #1f2229;
+  --color-base-alt2: #23262d;
+
+  --color-lite: #e8e8e8;
+  --color-lite-alt: #c4c6c7;
+
+  --color-accent: #e31738;
+  --color-accent-alt: #fd7171;
+
+  --dark-shadow: 0px 10px 40px -4px rgba(0, 0, 0, 0.1);
+
+  /*? ===== FONT */
+  --font-main: "Syne", sans-serif;
 }
 
-.skill-progress span {
-  display: none!important;
+@layer components {
+  .form-input {
+    color: var(--color-white);
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    resize: none !important;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid var(--color-accent);
+    }
+  }
+
+  .button {
+    padding: 15px 30px;
+    min-width: 180px;
+    text-align: center;
+    border: 1px solid var(--color-white);
+    background-color: var(--color-white);
+    border-radius: 30px;
+    position: relative;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    color: var(--color-base);
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-base);
+      color: var(--color-white);
+    }
+
+    &.alt {
+      background-color: transparent;
+      color: var(--color-white);
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-base);
+      }
+    }
+  }
 }
 
-.modal-video {
-  background-color: rgba(0, 0, 0, 0.85) !important;
+body {
+  background: var(--color-base-alt2);
+  color: var(--color-white);
+
+  font-family: var(--font-main);
+
+  min-height: 100dvh;
+
+  padding: 96px 40px 40px 40px;
 }
 
-.react-slidedown {
-  overflow: hidden;
-  transition-duration: 0.4s!important;
+body::-webkit-scrollbar-track {
+  background-color: var(--color-base-alt2) !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-base-light);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/*? ===== OVERRIDERS */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+ul.customTabList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  li {
+    position: relative;
+
+    padding-left: 20px;
+
+    font-size: 20px;
+
+    color: var(--color-lite-alt);
+
+    line-height: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background-color: var(--color-accent);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  ul.customTabList {
+    li {
+      font-size: 16px;
+      line-height: 30px;
+
+      &::before {
+        top: 12px;
+      }
+    }
+  }
+}
+
+/*? ===== CUSTOM */
+.section-title {
+  @apply text-3xl font-bold text-white md:text-4xl;
+
+  &.alt {
+    @apply text-4xl leading-[1.1];
+  }
+}
+
+.caption {
+  padding-left: 80px;
+  position: relative;
+
+  &&:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    background: #eee;
+    width: 60px;
+    height: 1px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .caption {
+    padding-left: 30px;
+
+    &&:after {
+      width: 20px;
+    }
+  }
+}
+
+.badge-text {
+  margin-bottom: 2rem;
+
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+
+  color: var(--color-accent);
+
+  line-height: 1;
+  --tw-tracking: 3px;
+  letter-spacing: 3px;
+}
+
+.modal {
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-base-alt2) !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-base-light);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .water-mark {
+    display: none;
+  }
 }
