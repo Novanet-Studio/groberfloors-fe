@@ -1,0 +1,80 @@
+export const slidesData: Record<
+  string,
+  {
+    bg: string;
+    number: string;
+    title: string[];
+    desc: string;
+  }[]
+> = {
+  lvf: [
+    {
+      bg: "/images/slid/groberfloors-kitchen-floor-2.webp",
+      number: "01",
+      title: ["Luxury Vinyl flooring is known for its exceptional durability"],
+      desc: "The stone plastic composite core layer provides rigidity and stability, making it highly resistant to impacts, dents, and scratches. It can withstand heavy foot traffic, making it suitable for both residential and commercial settings",
+    },
+    {
+      bg: "/images/slid/groberfloors-showroom.webp",
+      number: "02",
+      title: ["Luxury Vinyl flooring is waterproof"],
+      desc: "It can handle exposure to water and moisture without warping or damage. This makes it an ideal choice for areas prone to spills or humidity, such as kitchens, bathrooms, and basements.",
+    },
+    {
+      bg: "/images/slid/groberfloors-kitchen-floor.webp",
+      number: "03",
+      title: [
+        "Luxury Vinyl flooring is designed to replicate natural materials",
+      ],
+      desc: "The high-resolution decorative layer features intricate patterns and textures, providing a realistic visual appeal. With advancements in printing technology, Luxury Vinyl flooring can closely mimic the natural beauty of hardwood or stone floors.",
+    },
+  ],
+  wp: [
+    {
+      bg: "/images/slid/groberfloors-wallpanels-poolroom.webp",
+      number: "01",
+      title: ["Sustainable Panels for a better Future"],
+      desc: "WPC panels offer a sustainable alternative to traditional wood. They are made with recycled materials and require significantly less wood, minimizing the impact on forests. This innovative approach allows for creative and eco-friendly construction while ensuring high-quality results.",
+    },
+    {
+      bg: "/images/slid/groberfloors-wallpanels-living-room.webp",
+      number: "02",
+      title: ["Reduce Your Environmental Footprint with WPC"],
+      desc: "Choose WPC panels for a more environmentally conscious choice. This eco-friendly material uses recycled materials and significantly less wood, reducing your impact on the planet. WPC panels offer a sustainable and creative solution for various construction needs.",
+    },
+    {
+      bg: "/images/slid/groberfloors-wallpanels-bedroom.webp",
+      number: "03",
+      title: ["WPC Panels: Innovation for Sustainable Living"],
+      desc: "Discover the innovative solution for sustainable living. Made with recycled materials and requiring minimal wood, WPC offers a more environmentally friendly alternative for construction projects. Experience the beauty and durability of WPC while contributing to a greener future.",
+    },
+  ],
+  main: [
+    {
+      bg: "/images/slid/groberfloors-kitchen-floor.webp",
+      number: "01",
+      title: [
+        "Luxury Vinyl flooring is designed to replicate natural materials",
+      ],
+      desc: "The high-resolution decorative layer features intricate patterns and textures, providing a realistic visual appeal. With advancements in printing technology, Luxury Vinyl flooring can closely mimic the natural beauty of hardwood or stone floors.",
+    },
+    {
+      bg: "/images/slid/groberfloors-kitchen-floor-2.webp",
+      number: "02",
+      title: ["Luxury Vinyl flooring is known for its exceptional durability"],
+      desc: "The stone plastic composite core layer provides rigidity and stability, making it highly resistant to impacts, dents, and scratches. It can withstand heavy foot traffic, making it suitable for both residential and commercial settings",
+    },
+    {
+      bg: "/images/slid/groberfloors-wallpanels-living-room.webp",
+      number: "03",
+      title: ["Reduce Your Environmental Footprint with WPC"],
+      desc: "Choose WPC panels for a more environmentally conscious choice. This eco-friendly material uses recycled materials and significantly less wood, reducing your impact on the planet. WPC panels offer a sustainable and creative solution for various construction needs.",
+    },
+    {
+      bg: "/images/slid/groberfloors-wallpanels-bedroom.webp",
+      number: "04",
+      title: ["WPC Panels: Innovation for Sustainable Living"],
+      desc: "Discover the innovative solution for sustainable living. Made with recycled materials and requiring minimal wood, WPC offers a more environmentally friendly alternative for construction projects. Experience the beauty and durability of WPC while contributing to a greener future.",
+    },
+  ],
+};
