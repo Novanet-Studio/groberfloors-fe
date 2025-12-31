@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 import "../styles/globals.css";
 import Contact from "@/components/common/Contact";
@@ -50,11 +51,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <link rel="icon" href="/favicon.ico" sizes="any" />
 
       <body
-        className="antialiased overflow-y-auto [&::-webkit-scrollbar]:w-0.5"
+        className="antialiased overflow-y-auto [&::-webkit-scrollbar]:w-0.5 "
         suppressHydrationWarning
       >
         <Header />
@@ -65,6 +66,12 @@ export default function RootLayout({
 
         <Footer />
       </body>
+
+      <Script strategy="afterInteractive" src="/scripts/metrics.js"></Script>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-259FMWPGZF"
+      ></Script>
     </html>
   );
 }
