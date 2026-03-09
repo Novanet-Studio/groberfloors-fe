@@ -21,7 +21,7 @@ interface contactSourceItem {
 const contactSource: contactSourceItem[] = [
   {
     key: "address",
-    value: "8900 NW Lane Suite 140 Doral FL, 33172",
+    value: "0303 NW 62nd Street. Doral FL 33178",
     icon: <FaMap />,
   },
   { key: "mobile", value: "7866201586", icon: <FaMobile /> },
@@ -80,7 +80,7 @@ const Contact = () => {
   };
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData((prev) => ({
       ...prev,
