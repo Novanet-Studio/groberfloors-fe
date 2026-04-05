@@ -5,17 +5,19 @@ import "../styles/globals.css";
 import Contact from "@/components/common/Contact";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
-import { constructMetadata } from "./assets/data/metadata";
-import { getOrganizationJsonLd } from "./assets/data/jsonld";
+import { constructMetadata } from "@/hooks/useMetadata";
+import { metadata as staticMeta } from "./assets/data/metadata";
+import { constructJsonLd } from "@/hooks/useJsonLd";
+import { jsonld } from "./assets/data/jsonld";
 
-export const metadata: Metadata = constructMetadata();
+export const metadata: Metadata = constructMetadata(staticMeta.home);
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = getOrganizationJsonLd();
+  const jsonLd = constructJsonLd(jsonld.organization);
 
   return (
     <html lang="en" suppressHydrationWarning>

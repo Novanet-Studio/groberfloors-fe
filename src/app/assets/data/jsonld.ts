@@ -1,7 +1,7 @@
 import commonData from "./common.json";
 
-export function getOrganizationJsonLd() {
-  return {
+export const jsonld: Record<string, any> = {
+  organization: {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": commonData.siteName,
@@ -18,15 +18,14 @@ export function getOrganizationJsonLd() {
       commonData.socials.facebook,
       commonData.socials.instagram
     ]
-  };
-}
-
-export function getWebSiteJsonLd() {
-  return {
+  },
+  home: {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${commonData.url}/#home`,
     "name": commonData.siteName,
     "url": commonData.url,
     "description": commonData.defaultDescription
-  };
-}
+  }
+};
+
